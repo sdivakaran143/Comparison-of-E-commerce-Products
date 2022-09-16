@@ -2,7 +2,7 @@ const axios =require("axios"),cherio=require('cheerio');
 const price=(producturl)=>{
     axios.get(producturl).then(({data})=>{
         const $ =cherio.load(data);
-        console.log("The products is : "+$(".B_NuCI").text());
+        console.log("The products is : "+$(".B_NuCI").text().substr(0,($(".B_NuCI").text()).length/3)+"...");
         console.log("The products value is "+$("._16Jk6d").text());
         //console.log(data);
     });
