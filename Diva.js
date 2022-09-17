@@ -7,6 +7,7 @@ const Flipkartdetials=(producturl)=>{
         console.log("The products is : "+string.substring(0,string.indexOf("(")));
         console.log("Product spec is : "+splitStr(string));
         console.log("The products value is "+$("._16Jk6d").text());
+        console.log("Star Ratting : "+$('._3LWZlK').text().substring(0,3)+" out of 5 stars");
         //console.log(data);
     });
 }; 
@@ -26,6 +27,8 @@ const Amazondetials=(producturl)=>{
         else{
             console.log("The products value is ₹"+$("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
         }//console.log(data);
+
+        console.log("Star Rattings : "+$("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4-5 > span").text())
     });
 };
 function splitStr(str) {
@@ -41,4 +44,3 @@ let aid="B07RCV9YKM";
 //let aid="B07WFPMGQQ";
 let AmazonLink="https://www.amazon.in/dp/"+aid;
 Amazondetials(AmazonLink);
-
