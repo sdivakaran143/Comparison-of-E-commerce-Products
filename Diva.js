@@ -8,6 +8,7 @@ const Flipkartdetials=(producturl)=>{
         console.log("Product spec is : "+splitStr(string));
         console.log("The products value is "+$("._16Jk6d").text());
         console.log("Star Ratting : "+$('._3LWZlK').text().substring(0,3)+" out of 5 stars");
+        console.log($("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)").text()+"found...!");
         //console.log(data);
     });
 }; 
@@ -29,6 +30,7 @@ const Amazondetials=(producturl)=>{
         }//console.log(data);
 
         console.log("Star Rattings : "+$("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4-5 > span").text())
+        console.log($('#acrCustomerReviewText').text()+" found...!");
     });
 };
 function splitStr(str) {
