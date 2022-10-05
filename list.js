@@ -13,10 +13,9 @@ const FlipkartLinkFetch=(producturl,list)=>{
         }  
     });
 }; 
-let Name ="hitachi 1.5 ton".toLowerCase().trim();
+let Name ="1.5 ton hitachi".toLowerCase().trim();
 let link=Name.replace(" "+"%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+link+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
-console.log(requirements);
 FlipkartLinkFetch(FlipkartLink,requirements);
 //document.querySelector("#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div")
