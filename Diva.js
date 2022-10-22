@@ -1,4 +1,4 @@
-const axios =require("axios"),cherio=require('cheerio');
+const axios =require("axios"),cherio=require('cheerio'),req =require("request");
 const Flipkartdetials=(producturl)=>{
     axios.get(producturl).then(({data})=>{
         const $ =cherio.load(data);
@@ -38,12 +38,37 @@ function splitStr(str) {
    return(string);
 }
 
-//let fid="MOBFDHVQXCDJFDHN";
-let fid ="MOBGHHZ2CKB5D4WU";
-let FlipkartLink="https://www.flipkart.com/acer-nitro-27-inch-full-hd-led-backlit-ips-panel-165-gaming-monitor-vg270s/p/itme964fae95303f?pid="+fid+"&lid=LSTMONG9R2NTE8YVHEAELDQIL&marketplace=FLIPKART&store=6bo%2Fg0i%2F9no&srno=b_1_2&otracker=hp_omu_Best%2Bof%2BElectronics_4_3.dealCard.OMU_TXZMLQJZFW8U_3&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all%2Chp_omu_PINNED_neo%2Fmerchandising_Best%2Bof%2BElectronics_NA_dealCard_cc_4_NA_view-all_3&fm=neo%2Fmerchandising&iid=48fb71ef-d12d-4b0a-a92d-e36e7ab58757.MONG9R2NTE8YVHEA.SEARCH&ppt=hp&ppn=homepage&ssid=up9wxozlj40000001663324480223";
-Flipkartdetials(FlipkartLink);
+/*
+bellow part is perfornming product id  generation process  
+*/
 
-//let aid="B07RCV9YKM";
-let aid="B09RG5R5FG";
-let AmazonLink="https://www.amazon.in/dp/"+aid;
-Amazondetials(AmazonLink);
+//create main link // need to alter ....
+function findtheproductinflipkart(FlipkartLink){
+    req(FlipkartLink,(error,response,html)=>{
+        if(!error){
+            const $=cherio.load(html);
+            const link=($("._1fQZEK").attr('href'));
+            Flipkartdetials("https://www.flipkart.com"+link);
+        }
+    })
+    }
+    let Name ="mi tv 4x 32 inch".toLowerCase().trim();
+    let fliplink=Name.replace(" "+"%20%20");
+    let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
+    requirements=Name.split(" ");
+
+  findtheproductinflipkart(FlipkartLink)
+    
+    function findtheproductinamazon(Amazonink){
+        req(AmazonLink,(error,response,html)=>{
+            if(!error){
+                const $=cherio.load(html);
+                const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
+                Amazondetials("https://www.amazon.in/dp/"+link);
+            }
+        })
+    }
+    let amlink=Name.replaceAll(" ","+");
+    let AmazonLink="https://www.amazon.in/s?k="+amlink
+
+    findtheproductinamazon(AmazonLink)
