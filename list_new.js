@@ -26,7 +26,7 @@ findtheproductinflipkart(FlipkartLink,requirements)
 
 
 function findtheproductinamazon(AmazonLink,requirements){
-    req({url: AmazonLink, gzip: true}, (error,response,html) => {
+    req(AmazonLink,(error,response,html)=>{
         if(!error){
             const $=cherio.load(html);
             $(".s-card-container").each((i,val)=>{
