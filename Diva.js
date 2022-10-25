@@ -71,4 +71,4 @@ function findtheproductinflipkart(FlipkartLink){
     let amlink=Name.replaceAll(" ","+");
     let AmazonLink="https://www.amazon.in/s?k="+amlink
 
-    findtheproductinamazon(AmazonLink)
+    findtheproductinamazon("https://www.amazon.in/s?k=philipse+trimer&crid=896KYIVK7LQR&sprefix=philips+trimer%2Caps%2C298&ref=nb_sb_noss_2")
