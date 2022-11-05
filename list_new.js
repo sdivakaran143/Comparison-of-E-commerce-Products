@@ -56,7 +56,7 @@ function findtheproductinamazon(AmazonLink,requirements){
 }
 let amlink=Name.replaceAll(" ","+");
 let AmazonLink="https://www.amazon.in/s?k="+amlink
-//findtheproductinamazon(AmazonLink,requirements)
+findtheproductinamazon(AmazonLink,requirements)
 
 
 //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
