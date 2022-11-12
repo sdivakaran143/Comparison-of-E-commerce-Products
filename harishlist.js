@@ -2,9 +2,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const request = require('request');
 
-function fetchPriceAmazon(productUrl) {
+let countVal = 0;
+async function fetchPriceAmazon(productUrl) {
     axios.get(productUrl).then(({ data }) => {
-        // console.log(code);
         const $ = cheerio.load(data);
         console.log('\nAmazon :');
         let productName = $('#title').text().trim();
@@ -51,7 +51,7 @@ const fetchPriceflipkart = (productUrl) => {
         // if ($('._2d4LTz').text().length == 0) {
         //     productRatio = $('._2d4LTz').text() + ' out of 5 stars rated by ' + $('#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)').text() + ' People';
         // if ($('._2d4LTz').text().length == 0) {
-
+        console.log(countVal);
         console.log(`Product Name : ${productName}\nProduct Price : ${productPrice}\nProduct Star Ratio : ${productRatio}\n\n`);
 
         // let checkItem = $('#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(3) > div._3Z0lU8 > div').text();
@@ -98,16 +98,14 @@ const getFlipkartProductList = (productListUrl, itemName, brand, model) => {
         console.log("List :");
 
         $('._1AtVbE').each((i, val) => {
-
-
             let listName;
             let listLink;
             let tempListName;
             let checkName;
             // console.log($(val).find('._2WkVRV').text());
             if ($('div').hasClass('_2WkVRV')) {
-                // console.log("hi");
                 checkName = $(val).find('._2WkVRV').text()
+                console.log(checkName);
                 listName = $(val).find('.IRpwTa').text();
                 listLink = $(val).find('.IRpwTa').attr('href');
                 tempListName = checkName.toLowerCase();
@@ -117,13 +115,15 @@ const getFlipkartProductList = (productListUrl, itemName, brand, model) => {
                 // console.log(listName);
                 listLink = $(val).find('._1fQZEK').attr('href');
                 tempListName = listName.toLowerCase();
+                // console.log(tempListName);
             }
             else if ($('a').hasClass('s1Q9rs')) {
                 listName = $(val).find('.s1Q9rs').text();
                 listLink = $(val).find('.s1Q9rs').attr('href');
                 tempListName = listName.toLowerCase();
             } else { console.log("Not Found") }
-            if (tempListName != null && tempListName.includes(itemName.toLowerCase()) && ((tempListName.includes(brand.toLowerCase())) || (tempListName.includes(model.toLowerCase())))) {
+            if (tempListName != null && tempListName.includes(itemName.toLowerCase()) && ((tempListName.includes(brand.toLowerCase())) && (tempListName.includes(model)))) {
+                countVal++;
                 console.log(listName + '\n');
                 fetchPriceflipkart("https://www.flipkart.com" + listLink);
             }
@@ -133,10 +133,11 @@ const getFlipkartProductList = (productListUrl, itemName, brand, model) => {
 
 //Amazon :
 const getAmazonProductList = (productListUrl, itemName) => {
-    request({url: productListUrl, gzip: true}, (error,response,html) => {
+    request({ url: productListUrl, gzip: true }, (error, response, html) => {
+        // request(productListUrl, (error, response, html) => {
         if (!error) {
             const $ = cheerio.load(html);
-            console.log(html);
+            // console.log(html);
             console.log("List :");
             $('.s-result-item').each((i, val) => {
                 const listName = $(val).find('.a-size-mini').text();
@@ -151,6 +152,7 @@ const getAmazonProductList = (productListUrl, itemName) => {
         }
     });
 }
+
 
 // //Amazon :
 // const getAmazonProductList = (productListUrl, itemName) => {
@@ -211,7 +213,9 @@ const getChromaProductList = (productListUrl) => {
 }
 
 // test case : 1
+// const InputName = "redmi tv";
 const InputName = "philips vacuum cleaner";
+// const InputName = "iPhone 12 128gb white";
 const brand = "";
 const model = "";
 
@@ -243,10 +247,13 @@ const model = "";
 const startingWord = InputName.split(' ')[0];
 const ItemName = (InputName.replace(/\s/g, '%20'));
 
-// getFlipkartProductList('https://www.flipkart.com/search?q=$' + ItemName + '&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off', startingWord, brand, model);
+// console.log('https://www.flipkart.com/search?q=$' + ItemName + '&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off');
+getFlipkartProductList('https://www.flipkart.com/search?q=$' + ItemName + '&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off', startingWord, "", "");
 // console.log('https://www.amazon.in/s?k=' + ItemName + '&crid=1JAHVN17F0AV4&sprefix=victus+gaming+lapto%2Caps%2C1244&ref=nb_sb_noss_2');
-console.log('https://www.amazon.in/s?k=' + ItemName + '&crid=1JAHVN17F0AV4&sprefix=victus+gaming+lapto%2Caps%2C1244&ref=nb_sb_noss_2');
-getAmazonProductList('https://www.amazon.in/s?k=' + ItemName + '&crid=1JAHVN17F0AV4&sprefix=victus+gaming+lapto%2Caps%2C1244&ref=nb_sb_noss_2', startingWord);
+// console.log('https://www.amazon.in/s?k=' + ItemName + '&crid=1JAHVN17F0AV4&sprefix=victus+gaming+lapto%2Caps%2C1244&ref=nb_sb_noss_2');
+
+
+// getAmazonProductList('https://www.amazon.in/s?k=' + ItemName + '&crid=1JAHVN17F0AV4&sprefix=victus+gaming+lapto%2Caps%2C1244&ref=nb_sb_noss_2', startingWord);
 
 // fetchProductCroma('https://www.croma.com/philips-dry-vacuum-cleaner-0-4-litres-tank-fc6726-01-deep-black-/p/255915');
 // getChromaProductList('https://www.croma.com/search/?q=' + ItemName + '%3Arelevance%3AZAStatusFlag%3Atrue%3AexcludeOOSFlag&text=philips%20vacuum%20cleaner');
