@@ -1,22 +1,21 @@
-const req =require("request"),cherio=require('cheerio'),axios=require("axios");
+const req =require("request"),cherio=require('cheerio'),axios=require("axios"),findmainpage=require("./productpage");
 
 let FlipkartObj={};
 let AmazonObj={};
 
-// function addatpage(productName,link){
-//     const ele=document.createElement('a');
-//     const text=document.createTextNode(productName);
-//     ele.appendChild(text);
-//     document.getElementById("addhere").appendChild(ele);
-//     ele.classList.add("list");
-//     ele.setAttribute('href',link);
-    
-// }
-// // addatpage("summma","https://www.amazon.in//inches-Horizon-Ready-Android-L32M6-EI/dp/B08WPPDFLD/ref=sr_1_9?keywords=mi+tv&qid=1668102731&qu=eyJxc2MiOiI0LjcyIiwicXNhIjoiNC4zOCIsInFzcCI6IjMuNjMifQ%3D%3D&sr=8-9");
 
 function storefilpkart(listname,listLink,requirements){
     for(let i=0;i<requirements.length;i++){
-            if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);break;}
+            if(!listname.includes(requirements[i])){
+                break;
+            }
+
+            if(i==requirements.length-1){
+                // if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink); 
+                    findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                    // break;}
+            }
+            
         }
 }
 
@@ -37,10 +36,10 @@ req(FlipkartLink,(error,response,html)=>{
         })
     }
     
-    // console.log(Object.values(FlipkartObj));
+    console.log(Object.values(FlipkartObj));
 });
 }
-let Name ="casio watch".toLowerCase().trim();
+let Name ="mi tv 4a".toLowerCase().trim();
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
@@ -48,20 +47,27 @@ findtheproductinflipkart(FlipkartLink,requirements)
 
 
 function findtheproductinamazon(AmazonLink,requirements){
-    req({url: AmazonLink, gzip: true}, (error,response,html) => {
-        // req(AmazonLink,(error,response,html)=>{
+    // req({url: AmazonLink, gzip: true}, (error,response,html) => {
+        req(AmazonLink,(error,response,html)=>{
         if(!error){
             const $=cherio.load(html);
             $(".s-card-container").each((i,val)=>{
                 const listname=$(val).find(".a-color-base").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
-                    if(!(($(val).find('.a-color-secondary').text())=="Sponsored")){AmazonObj[listname]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')
-                }
+                    if(!(($(val).find('.a-color-secondary').text())=="Sponsored")){
+                        if(!listname.includes(requirements[i])){
+                            break;
+                        }
+                        if(i==(requirements.length-1)){
+                            AmazonObj[listname]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
+                            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
+                        }
+                    }
                 }
             })//a-color-secondary
-            let json =JSON.stringify(AmazonObj);
-            console.log(json);
-            // console.log(Object.values(AmazonObj));
+            // let json =JSON.stringify(AmazonObj); 
+            // console.log(json);
+            console.log(Object.values(AmazonObj));
             // if(!error){
             //     const $=cherio.load(html);
             //     const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
@@ -82,21 +88,3 @@ findtheproductinamazon(AmazonLink,requirements)
 /////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
-
-//croma
-function findtheproductinCroma(CromaLink,requirements){
-    req(CromaLink,(error,response,html)=>{
-        if(!error){
-            const $ =load(html);
-            // console.log(html);
-            console.log($("//*[@id=`259209`]/div[2]/div[1]/h3/a").text());
-        }
-
-    })
-
-}
-//findtheproductinCroma("https://www.croma.com/search/?q=mi%20tv%205x%3Arelevance%3AZAStatusFlag%3Atrue%3AexcludeOOSFlag&text=mi%20tv%205x",requirements);
-//#\32 42862 > div.product-info > div:nth-child(1) > h3 > a
-///html/body/main/div[3]/div[1]/div[2]/div/div/div[3]/ul/li[2]/div/div[2]/div[1]/h3/a
-////*[@id="242862"]/div[2]/div[1]/h3/a
-//#\32 59209 > div.product-info > div:nth-child(1) > h3 > a
