@@ -4,7 +4,7 @@ let FlipkartObj={};
 let AmazonObj={};
 
 
-function storefilpkart(listname,listLink,requirements){
+async function storefilpkart(listname,listLink,requirements){
     for(let i=0;i<requirements.length;i++){
             if(!listname.includes(requirements[i])){
                 break;
@@ -19,7 +19,7 @@ function storefilpkart(listname,listLink,requirements){
         }
 }
 
-function findtheproductinflipkart(FlipkartLink,requirements){
+async function findtheproductinflipkart(FlipkartLink,requirements){
 req(FlipkartLink,(error,response,html)=>{
     if(!error){
         const $=cherio.load(html);
@@ -39,14 +39,14 @@ req(FlipkartLink,(error,response,html)=>{
     console.log(Object.values(FlipkartObj));
 });
 }
-let Name ="mi tv 4a".toLowerCase().trim();
+let Name ="philips vacuum cleaner".toLowerCase().trim();
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
 findtheproductinflipkart(FlipkartLink,requirements)
 
 
-function findtheproductinamazon(AmazonLink,requirements){
+async function findtheproductinamazon(AmazonLink,requirements){
     // req({url: AmazonLink, gzip: true}, (error,response,html) => {
         req(AmazonLink,(error,response,html)=>{
         if(!error){
