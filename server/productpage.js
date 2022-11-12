@@ -5,7 +5,7 @@ const Flipkartdetials=(producturl)=>{
         var string=$(".B_NuCI").text().trim();
         console.log("\nthe price at Flipkart  : ");
         console.log("The products is : "+string.substring(0,string.indexOf("(")));
-        console.log("Product spec is : "+splitStr(string));
+        console.log("Product spec is : "+string.substring(string.indexOf("(")));
         console.log("The products value is "+$("._16Jk6d").text());
         console.log("Star Ratting : "+$('._3LWZlK').text().substring(0,3)+" out of 5 stars");
         console.log($("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)").text()+"found...!");
@@ -18,7 +18,7 @@ const Amazondetials=(producturl)=>{
         var string=$("#title").text().trim();
         console.log("\nthe price at Amazon  : ");
         console.log("The products is : "+string.substring(0,string.indexOf("(")));
-        console.log("Product spec is : "+splitStr($("#title").text()));
+        console.log("Product spec is : "+string.substring(string.indexOf("(")));
         if(!($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text())){
            console.log("The products value is "+$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
             if(!$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text()){
@@ -33,42 +33,8 @@ const Amazondetials=(producturl)=>{
         console.log($('#acrCustomerReviewText').text()+" found...!");
     });
 };
-function splitStr(str) {
-    var string =str.substring(str.indexOf("("),str.length).replaceAll("|",",");
-   return(string);
-}
 
-/*
-bellow part is perfornming product id  generation process  
-*/
-
-//create main link // need to alter ....
-function findtheproductinflipkart(FlipkartLink){
-    req(FlipkartLink,(error,response,html)=>{
-        if(!error){
-            const $=cherio.load(html);
-            const link=($("._1fQZEK").attr('href'));
-            Flipkartdetials("https://www.flipkart.com"+link);
-        }
-    })
-    }
-    let Name ="mi tv 4x 32 inch".toLowerCase().trim();
-    let fliplink=Name.replace(" "+"%20%20");
-    let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
-    requirements=Name.split(" ");
-
-  findtheproductinflipkart(FlipkartLink)
-    
-    function findtheproductinamazon(Amazonink){
-        req(AmazonLink,(error,response,html)=>{
-            if(!error){
-                const $=cherio.load(html);
-                const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
-                Amazondetials("https://www.amazon.in/dp/"+link);
-            }
-        })
-    }
-    let amlink=Name.replaceAll(" ","+");
-    let AmazonLink="https://www.amazon.in/s?k="+amlink
-
-    findtheproductinamazon("https://www.amazon.in/s?k=philipse+trimer&crid=896KYIVK7LQR&sprefix=philips+trimer%2Caps%2C298&ref=nb_sb_noss_2")
+const amlin="https://www.amazon.in/Redmi-inches-Smart-L43M6-RA-Android/dp/B09G73T643/ref=sr_1_2_sspa?keywords=mi+tv&qid=1668266401&qu=eyJxc2MiOiI0LjcyIiwicXNhIjoiNC4zOCIsInFzcCI6IjMuNjMifQ%3D%3D&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1";
+const fliplin="https://www.flipkart.com/mi-4a-horizon-100-cm-40-inch-full-hd-led-smart-android-tv-20w-powerful-audio-bezel-less-frame/p/itm3c92e3fcfdeca?pid=TVSG36HHUKPKGJFC&lid=LSTTVSG36HHUKPKGJFCES4MSK&marketplace=FLIPKART&q=Mi%20tv%204a&store=ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=1f8487a0-04b7-4109-a356-7cc2d311d196.TVSG36HHUKPKGJFC.SEARCH&ppt=sp&ppn=sp&ssid=0az5zwxvk00000001663344698985&qH=04e81d700cbf8360";
+Flipkartdetials(fliplin);
+Amazondetials(amlin)
