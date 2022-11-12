@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Zahid",
+    "county": "pakistan"
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "country": "USA"
+  },
+  {
+    "id": 3,
+    "name": "Parkash",
+    "country": "india"
+  }
+]

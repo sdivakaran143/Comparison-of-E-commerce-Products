@@ -1,4 +1,4 @@
-const req =require("request"),cherio=require('cheerio'),axios=require("axios"),findmainpage=require("./productpage");
+const req =require("request"),cherio=require('cheerio'),axios=require("axios");//,findmainpage=require("./productpage");
 
 let FlipkartObj={};
 let AmazonObj={};
@@ -11,9 +11,10 @@ async function storefilpkart(listname,listLink,requirements){
             }
 
             if(i==requirements.length-1){
-                // if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink); 
-                    findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
-                    // break;}
+                 if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink); 
+                    // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                    // break;
+                }
             }
             
         }
@@ -35,8 +36,7 @@ req(FlipkartLink,(error,response,html)=>{
             } else { console.log("Not Found") }
         })
     }
-    
-    console.log(Object.values(FlipkartObj));
+    console.log(Object.keys(FlipkartObj));
 });
 }
 let Name ="philips vacuum cleaner".toLowerCase().trim();
@@ -52,7 +52,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
         if(!error){
             const $=cherio.load(html);
             $(".s-card-container").each((i,val)=>{
-                const listname=$(val).find(".a-color-base").text().toLowerCase();
+                const listname=$(val).find(".a-text-normal").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
                     if(!(($(val).find('.a-color-secondary').text())=="Sponsored")){
                         if(!listname.includes(requirements[i])){
@@ -60,14 +60,14 @@ async function findtheproductinamazon(AmazonLink,requirements){
                         }
                         if(i==(requirements.length-1)){
                             AmazonObj[listname]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
-                            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
+                            // findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
                         }
                     }
                 }
             })//a-color-secondary
             // let json =JSON.stringify(AmazonObj); 
             // console.log(json);
-            console.log(Object.values(AmazonObj));
+            console.log(Object.keys(AmazonObj));
             // if(!error){
             //     const $=cherio.load(html);
             //     const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
