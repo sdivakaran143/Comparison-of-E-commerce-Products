@@ -1,8 +1,10 @@
-const req =require("request"),cherio=require('cheerio'),axios=require("axios");//,findmainpage=require("./productpage");
+const req =require("request"),cherio=require('cheerio'),axios=require("axios"),fs=require('fs'),findmainpage=require("./productpage");
 
 let FlipkartObj={};
 let AmazonObj={};
-
+let objflipkart=[];
+let objamazon=[];
+let array={};
 
 async function storefilpkart(listname,listLink,requirements){
     for(let i=0;i<requirements.length;i++){
@@ -13,7 +15,11 @@ async function storefilpkart(listname,listLink,requirements){
             if(i==requirements.length-1){
                  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink); 
                     // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
-                    // break;
+                    array={
+                        name:listname,
+                        link:("https://www.flipkart.com"+listLink)
+                    };
+                    objflipkart.push((array));
                 }
             }
             
@@ -36,10 +42,12 @@ req(FlipkartLink,(error,response,html)=>{
             } else { console.log("Not Found") }
         })
     }
-    console.log(Object.keys(FlipkartObj));
+    console.log(objflipkart)
+    storejsonflipkart();
+    // console.log(Object.keys(FlipkartObj));
 });
 }
-let Name ="philips vacuum cleaner".toLowerCase().trim();
+let Name ="iphone".toLowerCase().trim();
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
@@ -59,15 +67,25 @@ async function findtheproductinamazon(AmazonLink,requirements){
                             break;
                         }
                         if(i==(requirements.length-1)){
-                            AmazonObj[listname]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
+                            let n=listname.indexOf("₹");
+                            if(listname.indexOf("₹")==-1){
+                                n=listname.length;
+                            }
+                            AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
                             // findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
+                            array={
+                                name:(listname).substring(0,n),
+                                link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href'))
+                            };
+                            objamazon.push((array));
                         }
                     }
                 }
             })//a-color-secondary
             // let json =JSON.stringify(AmazonObj); 
             // console.log(json);
-            console.log(Object.keys(AmazonObj));
+            // console.log(Object.values(AmazonObj));
+            storejsonAmazon();
             // if(!error){
             //     const $=cherio.load(html);
             //     const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
@@ -75,6 +93,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
             // }
         }
     })
+
 }
 let amlink=Name.replaceAll(" ","+");
 let AmazonLink="https://www.amazon.in/s?k="+amlink
@@ -88,3 +107,21 @@ findtheproductinamazon(AmazonLink,requirements)
 /////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
+  function storejsonAmazon() {
+    fs.writeFile('./dbAmazon.json', JSON.stringify(objamazon,100,5), err => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('data written successfully on DBAmazon...');
+        }
+    });
+  }
+  function storejsonflipkart(){
+    fs.writeFile('./dbFlipkart.json', JSON.stringify(objflipkart,100,5), err => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('data written successfully on DBFlipkart.....');
+        }
+    });
+  }
