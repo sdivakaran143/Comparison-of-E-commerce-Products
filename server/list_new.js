@@ -8,19 +8,19 @@ let array={};
 
 async function storefilpkart(listname,listLink,requirements){
     for(let i=0;i<requirements.length;i++){
-            if(!listname.includes(requirements[i])){
+            if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
                 break;
             }
 
             if(i==requirements.length-1){
-                 if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink); 
-                    // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
+                 // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
                     array={
                         name:listname,
                         link:("https://www.flipkart.com"+listLink)
                     };
                     objflipkart.push((array));
-                }
+                
             }
             
         }
@@ -42,12 +42,12 @@ req(FlipkartLink,(error,response,html)=>{
             } else { console.log("Not Found") }
         })
     }
-    console.log(objflipkart)
-    storejsonflipkart();
+    // console.log(objflipkart)
+    storeinjson("flipkart",objflipkart);
     // console.log(Object.keys(FlipkartObj));
 });
 }
-let Name ="iphone".toLowerCase().trim();
+let Name ="data warehousing and dATA MINING".toLowerCase().trim();
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
@@ -63,7 +63,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
                 const listname=$(val).find(".a-text-normal").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
                     if(!(($(val).find('.a-color-secondary').text())=="Sponsored")){
-                        if(!listname.includes(requirements[i])){
+                        if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
                             break;
                         }
                         if(i==(requirements.length-1)){
@@ -85,7 +85,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
             // let json =JSON.stringify(AmazonObj); 
             // console.log(json);
             // console.log(Object.values(AmazonObj));
-            storejsonAmazon();
+            storeinjson("amazon",objamazon);
             // if(!error){
             //     const $=cherio.load(html);
             //     const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
@@ -107,21 +107,15 @@ findtheproductinamazon(AmazonLink,requirements)
 /////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
-  function storejsonAmazon() {
-    fs.writeFile('./dbAmazon.json', JSON.stringify(objamazon,100,5), err => {
+  function storeinjson(fname,obj) {
+    if(obj==""){
+        obj.push("there is no datas...");
+    }
+    fs.writeFile('./'+fname+'db.json', JSON.stringify(obj,100,5), err => {
         if (err) {
             console.log(err);
         } else {
-            console.log('data written successfully on DBAmazon...');
-        }
-    });
-  }
-  function storejsonflipkart(){
-    fs.writeFile('./dbFlipkart.json', JSON.stringify(objflipkart,100,5), err => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('data written successfully on DBFlipkart.....');
+            console.log('data written successfully on '+fname+'db.json...');
         }
     });
   }
