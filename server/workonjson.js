@@ -46,3 +46,4 @@ fs.writeFile('./test1.json', JSON.stringify(data, null, 2), err => {
         console.log('data written successfully');
     }
 });
+fs.writeFileSync("./test");

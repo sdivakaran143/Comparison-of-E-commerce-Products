@@ -47,14 +47,13 @@ req(FlipkartLink,(error,response,html)=>{
     // console.log(Object.keys(FlipkartObj));
 });
 }
-let Name ="vivo v15".toLowerCase().trim();
+let Name ="hp laptop".toLowerCase().trim();
 // let Name ="data warehousing and dATA MINING".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
-findtheproductinflipkart(FlipkartLink,requirements)
-
+findtheproductinflipkart(FlipkartLink,requirements);
 
 async function findtheproductinamazon(AmazonLink,requirements){
     // req({url: AmazonLink, gzip: true}, (error,response,html) => {
@@ -93,6 +92,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
             //     const link=($("#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.sg-row > div.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(5)").attr("data-asin"))
             //     console.log("Amazon link  : https://www.amazon.in/dp/"+link)
             // }
+            // findtheproductinflipkart(FlipkartLink,requirements)
             storeinjson();
         }
     })
@@ -110,7 +110,7 @@ findtheproductinamazon(AmazonLink,requirements)
 /////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
-  function storeinjson() {
+async function storeinjson() {
     var json={
         amazon:amazonproducts,
         flipkart:flipkartproducts

@@ -1,38 +1,118 @@
 {
      "amazon": [
           {
-               "name": "vivo v15 pro topaz blue, 6gb ram, 128gb storage vivo v15 pro topaz blue, 6gb ram, 128gb storage",
-               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07KXC1YGG/ref=sr_1_1?keywords=vivo+v15&qid=1668535838&qu=eyJxc2MiOiI0Ljg5IiwicXNhIjoiNS43OSIsInFzcCI6IjEuMDAifQ%3D%3D&sr=8-1"
+               "name": "hp 15s-ryzen 3 3250u 8gb sdram/256gb ssd 15.6inch(39.6cm) hd, micro-edge laptop/amd radeon graphics/dual speakers/win 11 home/ms office/fast charge/jet black/1.69kg, 15s-ey1508au hp 15s-ryzen 3 3250u 8gb sdram/256gb ssd 15.6inch(39.6cm) hd, micro-edge laptop/amd radeon graphics/dual speakers/win 11 home/ms office/fast charge/jet black/1.69kg, 15s-ey1508au",
+               "link": "https://www.amazon.in//HP-15s-Ryzen-15-6inch-Micro-Edge-15s-ey1508AU/dp/B0BJ2LZXD9/ref=sr_1_5?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-5"
           },
           {
-               "name": "vivo v15 pro (topaz blue, 8gb ram, 128gb storage) vivo v15 pro (topaz blue, 8gb ram, 128gb storage)",
-               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07RCV9YKM/ref=sr_1_2?keywords=vivo+v15&qid=1668535838&qu=eyJxc2MiOiI0Ljg5IiwicXNhIjoiNS43OSIsInFzcCI6IjEuMDAifQ%3D%3D&sr=8-2"
+               "name": "hp 15s, 12th gen intel core i5 8gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/intel iris xe graphics/alexa/dual speakers/win 11/mso 2021/1.41 kg, 15s- fq5111tu hp 15s, 12th gen intel core i5 8gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/intel iris xe graphics/alexa/dual speakers/win 11/mso 2021/1.41 kg, 15s- fq5111tu",
+               "link": "https://www.amazon.in//HP-Micro-Edge-Anti-Glare-15s-fq5111TU/dp/B0B6F5V23N/ref=sr_1_6?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-6"
           },
           {
-               "name": "vivo v15 pro (ruby red, 6gb ram, 128gb storage) vivo v15 pro (ruby red, 6gb ram, 128gb storage)",
-               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07KX1KY4N/ref=sr_1_3?keywords=vivo+v15&qid=1668535838&qu=eyJxc2MiOiI0Ljg5IiwicXNhIjoiNS43OSIsInFzcCI6IjEuMDAifQ%3D%3D&sr=8-3"
+               "name": "hp 15- amd ryzen 3-3250u 15.6 inches 39.6 cm fhd, micro-edge, thin & light laptop (8 gb ram/1tb hdd + 256gb ssd/ amd radeon graphics/ win11/ms office/1.74 kg 15s-gr0012au) windows 11 home hp 15- amd ryzen 3-3250u 15.6 inches 39.6 cm fhd, micro-edge, thin & light laptop (8 gb ram/1tb hdd + 256gb ssd/ amd radeon graphics/ win11/ms office/1.74 kg 15s-gr0012au) windows 11 home",
+               "link": "https://www.amazon.in//HP-3-3250-Laptop-Windows-15s-gr0012AU/dp/B08T6THSMQ/ref=sr_1_7?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-7"
           },
           {
-               "name": "vivo v15 pro (ruby red, 8gb ram, 128gb storage) vivo v15 pro (ruby red, 8gb ram, 128gb storage)",
-               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07RKXBRM9/ref=sr_1_5?keywords=vivo+v15&qid=1668535838&qu=eyJxc2MiOiI0Ljg5IiwicXNhIjoiNS43OSIsInFzcCI6IjEuMDAifQ%3D%3D&sr=8-5"
+               "name": "hp 15s amd ryzen 3- 5300u 15.6inch(39.6cm) fhd laptop (8gb ram/512gb ssd, micro-edge, anti-glare display/radeon graphics/windows 11 home/alexa/dual speakers/ms office/1.69kg, 15s-eq2143au) hp 15s amd ryzen 3- 5300u 15.6inch(39.6cm) fhd laptop (8gb ram/512gb ssd, micro-edge, anti-glare display/radeon graphics/windows 11 home/alexa/dual speakers/ms office/1.69kg, 15s-eq2143au)",
+               "link": "https://www.amazon.in//HP-15-6inch-Micro-Edge-Anti-Glare-15s-Eq2143au/dp/B09R1MMMTH/ref=sr_1_8?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-8"
+          },
+          {
+               "name": "hp pavilion 14 12th gen intel core i5 16gb sdram/512gb ssd 14 inch(35.6cm) ips micro-edge fhd laptop/intel uhd graphics/b&o/win 11/alexa built-in/backlit kb/fpr/mso 2021/natural silver, 14-dv2014tu hp pavilion 14 12th gen intel core i5 16gb sdram/512gb ssd 14 inch(35.6cm) ips micro-edge fhd laptop/intel uhd graphics/b&o/win 11/alexa built-in/backlit kb/fpr/mso 2021/natural silver, 14-dv2014tu",
+               "link": "https://www.amazon.in//HP-Pavilion-Micro-Edge-Graphics-14-dv2014TU/dp/B0B1M9HYBT/ref=sr_1_9?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-9"
+          },
+          {
+               "name": "hp 15s,11th gen intel core i3-1115g4 8gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/alexa built-in/win 11/intel uhd graphics/dual speakers/ ms office 2021/1.69 kg, 15s-fq2673tu hp 15s,11th gen intel core i3-1115g4 8gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/alexa built-in/win 11/intel uhd graphics/dual speakers/ ms office 2021/1.69 kg, 15s-fq2673tu",
+               "link": "https://www.amazon.in//HP-i3-1115G4-Micro-Edge-Anti-Glare-15s-fq2673TU/dp/B0B4N6JVMW/ref=sr_1_10?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-10"
+          },
+          {
+               "name": "hp 14s, 11th gen intel core i3-1115g4, 8gb ram/256gb ssd 14-inch(35.6 cm) micro-edge, anti-glare, fhd laptop/alexa built-in/win 11/intel uhd graphics/dual speakers/ mso 2021/1.41 kg, 14s-dy2507tu hp 14s, 11th gen intel core i3-1115g4, 8gb ram/256gb ssd 14-inch(35.6 cm) micro-edge, anti-glare, fhd laptop/alexa built-in/win 11/intel uhd graphics/dual speakers/ mso 2021/1.41 kg, 14s-dy2507tu",
+               "link": "https://www.amazon.in//HP-i3-1115G4-Micro-Edge-Anti-Glare-14s-dy2507TU/dp/B0B63Y75P9/ref=sr_1_13?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-13"
+          },
+          {
+               "name": "hp pavilion x360 11th gen intel core i5 14 inch(35.6 cm) fhd,ips,multitouch 2-in-1 laptop(16gb ram/512gb ssd/backlit kb/intel iris xe graphics/pen/alexa built-in/mso/1.52kg) 14-dy1049tu, spruce blue hp pavilion x360 11th gen intel core i5 14 inch(35.6 cm) fhd,ips,multitouch 2-in-1 laptop(16gb ram/512gb ssd/backlit kb/intel iris xe graphics/pen/alexa built-in/mso/1.52kg) 14-dy1049tu, spruce blue",
+               "link": "https://www.amazon.in//HP-Pavilion-Multitouch-Graphics-14-dy1049TU/dp/B09Y8Y4SJR/ref=sr_1_14?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-14"
+          },
+          {
+               "name": "hp chromebook x360 intel celeron n4020 14 inch(35.6 cm) micro-edge, touchscreen, 2-in-1 laptop (4gb ram/64gb emmc/chrome os/intel uhd graphics,1.49kg), 14a-ca0506tu hp chromebook x360 intel celeron n4020 14 inch(35.6 cm) micro-edge, touchscreen, 2-in-1 laptop (4gb ram/64gb emmc/chrome os/intel uhd graphics,1.49kg), 14a-ca0506tu",
+               "link": "https://www.amazon.in//HP-Chromebook-Micro-Edge-Touchscreen-14a-ca0506TU/dp/B09QQPGDBG/ref=sr_1_17?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-17"
+          },
+          {
+               "name": "hp 14s, 5th gen amd ryzen 3- 8gb ram/512gb ssd 14 inches(35cm) laptop, fhd ips micro-edge display/ backlit keyboard/alexa/windows 11/fast charge/radeon graphics/1.46kg/natural silver -14s-fq1089au hp 14s, 5th gen amd ryzen 3- 8gb ram/512gb ssd 14 inches(35cm) laptop, fhd ips micro-edge display/ backlit keyboard/alexa/windows 11/fast charge/radeon graphics/1.46kg/natural silver -14s-fq1089au",
+               "link": "https://www.amazon.in//HP-Micro-Edge-Keyboard-Graphics-14s-fq1089AU/dp/B09Q3JZ4YX/ref=sr_1_18?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-18"
+          },
+          {
+               "name": "hp 15s, 11th gen intel core i3 8gb ram/1tb hdd+256 gb ssd 15.6-inches/39.6 cm fhd laptop/windows 11/intel uhd graphics/dual speakers/alexa/mso/fast charge/1.75 kg, 15s-du3614tu hp 15s, 11th gen intel core i3 8gb ram/1tb hdd+256 gb ssd 15.6-inches/39.6 cm fhd laptop/windows 11/intel uhd graphics/dual speakers/alexa/mso/fast charge/1.75 kg, 15s-du3614tu",
+               "link": "https://www.amazon.in//HP-15-6-inches-Graphics-Speakers-15s-du3614TU/dp/B0B6F6PM6C/ref=sr_1_19?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-19"
+          },
+          {
+               "name": "hp 15s, 12th gen intel core i5 16gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/win 11/intel iris xe graphics/dual speakers/alexa/backlit kb/mso/fast charge, 15s- fq5112tu hp 15s, 12th gen intel core i5 16gb ram/512gb ssd 15.6-inch(39.6 cm) micro-edge anti-glare fhd laptop/win 11/intel iris xe graphics/dual speakers/alexa/backlit kb/mso/fast charge, 15s- fq5112tu",
+               "link": "https://www.amazon.in//HP-Micro-Edge-Anti-Glare-15s-fq5112TU/dp/B0B6F6HN37/ref=sr_1_20?keywords=hp+laptop&qid=1668608576&qu=eyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%3D%3D&sr=8-20"
+          },
+          {
+               "name": "(renewed) hp elitebook carbon fiber laptop 1040g2 intel core i5 - 5300u processor 5th gen, 4 gb ram & 128 gb ssd, 14.1 inches (ultra slim & feather light 1.54kg) notebook computer (renewed) hp elitebook carbon fiber laptop 1040g2 intel core i5 - 5300u processor 5th gen, 4 gb ram & 128 gb ssd, 14.1 inches (ultra slim & feather light 1.54kg) notebook computer",
+               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MTozMDg5OTkyOTM0MjYxMTkwOjE2Njg2MDg1NzY6c3BfYnRmOjIwMDg2NzEyMTUyMTk4OjowOjo&url=%2FRenewed-HP-Elitebook-Carbon-Laptop%2Fdp%2FB0BJ8N9B77%2Fref%3Dsr_1_22_sspa%3Fkeywords%3Dhp%2Blaptop%26qid%3D1668608576%26qu%3DeyJxc2MiOiI2LjgxIiwicXNhIjoiNi43NSIsInFzcCI6IjUuMjYifQ%253D%253D%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1"
           }
      ],
      "flipkart": [
           {
-               "name": "vivo v15 (frozen black, 64 gb)",
-               "link": "https://www.flipkart.com/vivo-v15-frozen-black-64-gb/p/itmfgy3wssspmt6w?pid=MOBFEKXYTGYFG5S9&lid=LSTMOBFEKXYTGYFG5S9VOCICW&marketplace=FLIPKART&q=vivo++v15&store=tyy%2F4io&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=52ca93f7-66a3-4035-99fa-85b3a79c9726.MOBFEKXYTGYFG5S9.SEARCH&ppt=None&ppn=None&ssid=w0i3c3rwcw0000001668535838491&qH=f887ba0b1f0ab56c"
+               "name": "hp 15s intel core i5 12th gen - (8 gb/512 gb ssd/windows 11 home) 15s-fq5111tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fq5111tu-thin-light-laptop/p/itmbecf654716fd5?pid=COMGG63HGDTFCCGW&lid=LSTCOMGG63HGDTFCCGWLETTA9&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGG63HGDTFCCGW.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
           },
           {
-               "name": "vivo v15 pro (topaz blue, 128 gb)",
-               "link": "https://www.flipkart.com/vivo-v15-pro-topaz-blue-128-gb/p/itmfdhvqt5kdy2gx?pid=MOBFDHVQWZHAJTWX&lid=LSTMOBFDHVQWZHAJTWXKQT6XP&marketplace=FLIPKART&q=vivo++v15&store=tyy%2F4io&srno=s_1_2&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=52ca93f7-66a3-4035-99fa-85b3a79c9726.MOBFDHVQWZHAJTWX.SEARCH&ppt=None&ppn=None&ssid=w0i3c3rwcw0000001668535838491&qH=f887ba0b1f0ab56c"
+               "name": "hp 14s intel core i3 11th gen - (8 gb/512 gb ssd/windows 11 home) 14s - dy2508tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-14s-intel-core-i3-11th-gen-8-gb-512-gb-ssd-windows-11-home-dy2508tu-thin-light-laptop/p/itm49f4531237a12?pid=COMGGTT4VFWG3FFM&lid=LSTCOMGGTT4VFWG3FFMB7VNLU&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGGTT4VFWG3FFM.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
           },
           {
-               "name": "vivo v15 pro (topaz blue, 128 gb)",
-               "link": "https://www.flipkart.com/vivo-v15-pro-topaz-blue-128-gb/p/itmffmh3damhbuga?pid=MOBFG8X7ZQHYHX28&lid=LSTMOBFG8X7ZQHYHX28FHKERJ&marketplace=FLIPKART&q=vivo++v15&store=tyy%2F4io&srno=s_1_3&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=52ca93f7-66a3-4035-99fa-85b3a79c9726.MOBFG8X7ZQHYHX28.SEARCH&ppt=None&ppn=None&ssid=w0i3c3rwcw0000001668535838491&qH=f887ba0b1f0ab56c"
+               "name": "hp athlon dual core 3050u - (8 gb/256 gb ssd/windows 11 home) 14s-fq0568au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-athlon-dual-core-3050u-8-gb-256-gb-ssd-windows-11-home-14s-fq0568au-thin-light-laptop/p/itm69710a61fcfdf?pid=COMGG63HHFBZ2BZP&lid=LSTCOMGG63HHFBZ2BZPO05AZF&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_3&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGG63HHFBZ2BZP.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
           },
           {
-               "name": "vivo v15 pro (ruby red, 128 gb)",
-               "link": "https://www.flipkart.com/vivo-v15-pro-ruby-red-128-gb/p/itmffmh3damhbuga?pid=MOBFDHVQXCDJFDHN&lid=LSTMOBFDHVQXCDJFDHNF0DHHQ&marketplace=FLIPKART&q=vivo++v15&store=tyy%2F4io&srno=s_1_4&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=52ca93f7-66a3-4035-99fa-85b3a79c9726.MOBFDHVQXCDJFDHN.SEARCH&ppt=None&ppn=None&ssid=w0i3c3rwcw0000001668535838491&qH=f887ba0b1f0ab56c"
+               "name": "hp ryzen 3 quad core 5300u - (8 gb/512 gb ssd/windows 11 home) 15s-eq2143au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-ryzen-3-quad-core-5300u-8-gb-512-gb-ssd-windows-11-home-15s-eq2143au-thin-light-laptop/p/itm833bca55e158b?pid=COMGAX8EEYFKCESS&lid=LSTCOMGAX8EEYFKCESS83R2QP&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGAX8EEYFKCESS.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp ryzen 5 hexa core 5500u - (8 gb/512 gb ssd/windows 11 home) 15s- eq2144au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-ryzen-5-hexa-core-5500u-8-gb-512-gb-ssd-windows-11-home-15s-eq2144au-thin-light-laptop/p/itm1eb242c8ec463?pid=COMGBH9JDPVGD8BH&lid=LSTCOMGBH9JDPVGD8BHIZPQIL&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGBH9JDPVGD8BH.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp 15s intel core i3 11th gen - (8 gb/512 gb ssd/windows 11 home) 15s-fq2671tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fq2671tu-thin-light-laptop/p/itm8d46603ec9cfd?pid=COMGFSNUHPZHSYHR&lid=LSTCOMGFSNUHPZHSYHR5PVLDS&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_7&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGFSNUHPZHSYHR.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp core i3 11th gen - (8 gb/512 gb ssd/windows 11 home) 15s-fr2511tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-core-i3-11th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fr2511tu-thin-light-laptop/p/itm89ae6cdc52fdc?pid=COMGG3S9ZPRYMXS5&lid=LSTCOMGG3S9ZPRYMXS5W8FJRU&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGG3S9ZPRYMXS5.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp athlon dual core 3050u - (8 gb/512 gb ssd/windows 11 home) 15s- eq1559au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-athlon-dual-core-3050u-8-gb-512-gb-ssd-windows-11-home-15s-eq1559au-thin-light-laptop/p/itm805c7d908648d?pid=COMGG63HRV3GFN4G&lid=LSTCOMGG63HRV3GFN4GPLQ1JG&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&spotlightTagId=BestsellerId_6bo%2Fb5g&srno=s_1_13&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGG63HRV3GFN4G.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp ryzen 5 hexa core 5500u - (8 gb/512 gb ssd/windows 11 home) 14s-fq1092au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-ryzen-5-hexa-core-5500u-8-gb-512-gb-ssd-windows-11-home-14s-fq1092au-thin-light-laptop/p/itm808dc28eb54e7?pid=COMGAX8EYBZZDXY6&lid=LSTCOMGAX8EYBZZDXY6KGWIPZ&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_14&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGAX8EYBZZDXY6.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp 15s ryzen 3 dual core 3250u - (8 gb/1 tb hdd/256 gb ssd/windows 10 home) 15s-gr0012au laptop",
+               "link": "https://www.flipkart.com/hp-15s-ryzen-3-dual-core-3250u-8-gb-1-tb-hdd-256-gb-ssd-windows-10-home-15s-gr0012au-laptop/p/itm9e1f8deeed35f?pid=COMFZHFWBE7APPH2&lid=LSTCOMFZHFWBE7APPH2PLTTEQ&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_15&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMFZHFWBE7APPH2.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp ryzen 3 dual core 3250u - (8 gb/256 gb ssd/windows 11 home) 15s-ey1508au thin and light laptop",
+               "link": "https://www.flipkart.com/hp-ryzen-3-dual-core-3250u-8-gb-256-gb-ssd-windows-11-home-15s-ey1508au-thin-light-laptop/p/itmec2f587ddbf77?pid=COMGFPH2ZWTDZHK6&lid=LSTCOMGFPH2ZWTDZHK6AEG0YB&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_16&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGFPH2ZWTDZHK6.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp g8 ryzen 3 dual core 3250u - (8 gb/1 tb hdd/windows 11 home) 245 g8 laptop",
+               "link": "https://www.flipkart.com/hp-g8-ryzen-3-dual-core-3250u-8-gb-1-tb-hdd-windows-11-home-245-laptop/p/itm2766707534f54?pid=COMGGVF8XSZGNQPV&lid=LSTCOMGGVF8XSZGNQPVRLGM3X&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_18&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGGVF8XSZGNQPV.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp intel core i3 11th gen - (8 gb/256 gb ssd/windows 11 home) 14-dy0212tu 2 in 1 laptop",
+               "link": "https://www.flipkart.com/hp-intel-core-i3-11th-gen-8-gb-256-gb-ssd-windows-11-home-14-dy0212tu-2-1-laptop/p/itm97bcdb7afc043?pid=COMGFHMBCSTHRYQA&lid=LSTCOMGFHMBCSTHRYQAHAOKEW&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_19&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGFHMBCSTHRYQA.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp 14s intel core i3 11th gen - (8 gb/256 gb ssd/windows 11 home) 14s - dy2507tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-14s-intel-core-i3-11th-gen-8-gb-256-gb-ssd-windows-11-home-dy2507tu-thin-light-laptop/p/itm183e95bd1f23b?pid=COMGG63H9BFFUYVY&lid=LSTCOMGG63H9BFFUYVYQPFKJJ&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_21&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGG63H9BFFUYVY.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
+          },
+          {
+               "name": "hp 15s intel core i5 12th gen - (8 gb/512 gb ssd/windows 11 home) 15s-fy5001tu thin and light laptop",
+               "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fy5001tu-thin-light-laptop/p/itmd18a8d25da52d?pid=COMGEU3BTEWFSAHF&lid=LSTCOMGEU3BTEWFSAHFXBO3GG&marketplace=FLIPKART&q=hp++laptop&store=6bo%2Fb5g&srno=s_1_24&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=b4064923-f104-4967-aebe-2a59968d72a5.COMGEU3BTEWFSAHF.SEARCH&ppt=None&ppn=None&ssid=qhjggjoxps0000001668608576806&qH=b913867c60a8d15c"
           }
      ]
 }
