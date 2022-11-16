@@ -5,33 +5,39 @@ let AmazonObj={};
 
 let flipkartproducts=[];
 let amazonproducts=[];
-let array={};
+let z=0;
 
 async function storefilpkart(listname,listLink,requirements){
+    console.log("flipc   "+z++);
+
     for(let i=0;i<requirements.length;i++){
             if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
                 break;
             }
 
             if(i==requirements.length-1){
+                // console.log(listname);
+
                 //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
                  // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
-                    array={
-                        name:listname,
-                        link:("https://www.flipkart.com"+listLink)
-                    };
-                    flipkartproducts.push((array));
-                
+                flipkartproducts.push({
+                    name:listname,
+                    link:("https://www.flipkart.com"+listLink)
+                });
+                storeinjson();
             }
             
         }
 }
 
 async function findtheproductinflipkart(FlipkartLink,requirements){
+    console.log("flip  "+z++);
+
 req(FlipkartLink,(error,response,html)=>{
     if(!error){
         const $=cherio.load(html);
-
+        requirements=(($("._10Ermr").children('span').text()).toLowerCase().trim()).split(" ");
+        // console.log(requirements);
         $('._1AtVbE').each((i, val) => {
             if ($('div').hasClass('_2WkVRV')) {
                 storefilpkart(($(val).find('.IRpwTa').text()).toLowerCase(),$(val).find('.IRpwTa').attr('href'),requirements);
@@ -47,7 +53,7 @@ req(FlipkartLink,(error,response,html)=>{
     // console.log(Object.keys(FlipkartObj));
 });
 }
-let Name ="hp laptop".toLowerCase().trim();
+let Name ="asssssus vivoboook".toLowerCase().trim();
 // let Name ="data warehousing and dATA MINING".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
@@ -58,8 +64,11 @@ findtheproductinflipkart(FlipkartLink,requirements);
 async function findtheproductinamazon(AmazonLink,requirements){
     // req({url: AmazonLink, gzip: true}, (error,response,html) => {
         req(AmazonLink,(error,response,html)=>{
+            console.log("amzon  "+z++);
         if(!error){
             const $=cherio.load(html);
+            requirements=$(".a-text-italic").text().toLowerCase().split(" ");
+            // console.log(requirements);
             $(".s-card-container").each((i,val)=>{
                 const listname=$(val).find(".a-text-normal").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
@@ -74,11 +83,11 @@ async function findtheproductinamazon(AmazonLink,requirements){
                             }
                             AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
                             // findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
-                            array={
+                            amazonproducts.push({
                                 name:(listname).substring(0,n),
                                 link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href'))
-                            };
-                            amazonproducts.push((array));
+                            });
+                            storeinjson();
                         }
                     }
                 }
@@ -93,7 +102,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
             //     console.log("Amazon link  : https://www.amazon.in/dp/"+link)
             // }
             // findtheproductinflipkart(FlipkartLink,requirements)
-            storeinjson();
+
         }
     })
 
@@ -101,7 +110,6 @@ async function findtheproductinamazon(AmazonLink,requirements){
 let amlink=Name.replaceAll(" ","+");
 let AmazonLink="https://www.amazon.in/s?k="+amlink
 findtheproductinamazon(AmazonLink,requirements)
-
 
 //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
 ///html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[3]
@@ -115,9 +123,9 @@ async function storeinjson() {
         amazon:amazonproducts,
         flipkart:flipkartproducts
     }
-
-    fs.writeFile('./database.json', JSON.stringify(json,100,5), err => {
-        if (err) throw err;
-            console.log('data written successfully on db.json...');
-    });
+    fs.writeFileSync('./database.json', JSON.stringify(json,null,5));
+    // fs.writeFile('./database.json', JSON.stringify(json,100,5), err => {
+    //     if (err) throw err;
+    //         console.log('data written successfully on db.json...');
+    // });
   }
