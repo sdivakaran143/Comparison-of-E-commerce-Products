@@ -24,7 +24,7 @@ async function storefilpkart(listname,listLink,requirements){
                     name:listname,
                     link:("https://www.flipkart.com"+listLink)
                 });
-                storeinjson();
+  
             }
             
         }
@@ -49,6 +49,7 @@ req(FlipkartLink,(error,response,html)=>{
             } else { console.log("Not Found") }
         })
     }
+    storeinjson();
     // console.log(objflipkart)
     // console.log(Object.keys(FlipkartObj));
 });
@@ -87,7 +88,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
                                 name:(listname).substring(0,n),
                                 link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href'))
                             });
-                            storeinjson();
+ 
                         }
                     }
                 }
@@ -102,7 +103,7 @@ async function findtheproductinamazon(AmazonLink,requirements){
             //     console.log("Amazon link  : https://www.amazon.in/dp/"+link)
             // }
             // findtheproductinflipkart(FlipkartLink,requirements)
-
+            storeinjson();
         }
     })
 
