@@ -7,7 +7,7 @@ let flipkartproducts=[];
 let amazonproducts=[];
 let z=0;
 
-async function storefilpkart(listname,listLink,requirements){
+function storefilpkart(listname,listLink,requirements){
     console.log("flipc   "+z++);
 
     for(let i=0;i<requirements.length;i++){
@@ -30,7 +30,7 @@ async function storefilpkart(listname,listLink,requirements){
         }
 }
 
-async function findtheproductinflipkart(FlipkartLink,requirements){
+function findtheproductinflipkart(FlipkartLink,requirements){
     console.log("flip  "+z++);
 
 req(FlipkartLink,(error,response,html)=>{
@@ -54,22 +54,34 @@ req(FlipkartLink,(error,response,html)=>{
     // console.log(Object.keys(FlipkartObj));
 });
 }
-let Name ="asssssus vivoboook".toLowerCase().trim();
-// let Name ="data warehousing and dATA MINING".toLowerCase().trim();
+
+// testCases
+    // cable creation multiport adapter usb c
+    // asssssus vivoboook
+    // tp link ethernet adapter
+    // data warehousing and dATA MINING"
+    // object oriented development sysytem
+    // hp victus
+
+
+let Name ="hp victus".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
 requirements=Name.split(" ");
 findtheproductinflipkart(FlipkartLink,requirements);
 
-async function findtheproductinamazon(AmazonLink,requirements){
+function findtheproductinamazon(AmazonLink,requirements){
     // req({url: AmazonLink, gzip: true}, (error,response,html) => {
         req(AmazonLink,(error,response,html)=>{
             console.log("amzon  "+z++);
         if(!error){
             const $=cherio.load(html);
-            requirements=$(".a-text-italic").text().toLowerCase().split(" ");
-            // console.log(requirements);
+            console.log($(".a-text-italic").text());
+            if(""!=$(".a-text-italic").text()){
+                requirements=$(".a-text-italic").text().toLowerCase().split(" "); 
+            }
+            console.log(requirements);
             $(".s-card-container").each((i,val)=>{
                 const listname=$(val).find(".a-text-normal").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
