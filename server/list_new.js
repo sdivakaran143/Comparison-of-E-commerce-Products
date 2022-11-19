@@ -6,6 +6,8 @@ let AmazonObj={};
 let flipkartproducts=[];
 let amazonproducts=[];
 let z=0;
+let amz=0;
+let flip=0;
 
 function storefilpkart(listname,listLink,requirements){
     console.log("flipc   "+z++);
@@ -21,6 +23,7 @@ function storefilpkart(listname,listLink,requirements){
                 //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
                  // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
                 flipkartproducts.push({
+                    id:++flip,
                     name:listname,
                     link:("https://www.flipkart.com"+listLink)
                 });
@@ -97,6 +100,7 @@ function findtheproductinamazon(AmazonLink,requirements){
                             AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
                             // findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
                             amazonproducts.push({
+                                id:++amz,
                                 name:(listname).substring(0,n),
                                 link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href'))
                             });
@@ -136,7 +140,7 @@ async function storeinjson() {
         amazon:amazonproducts,
         flipkart:flipkartproducts
     }
-    fs.writeFileSync('./database.json', JSON.stringify(json,null,5));
+    fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(json,null,5));
     // fs.writeFile('./database.json', JSON.stringify(json,100,5), err => {
     //     if (err) throw err;
     //         console.log('data written successfully on db.json...');
