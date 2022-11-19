@@ -77,7 +77,7 @@ function findtheproductinamazon(AmazonLink,requirements){
             console.log("amzon  "+z++);
         if(!error){
             const $=cherio.load(html);
-            console.log($(".a-text-italic").text());
+            // console.log($(".a-text-italic").text());
             if(""!=$(".a-text-italic").text()){
                 requirements=$(".a-text-italic").text().toLowerCase().split(" "); 
             }
