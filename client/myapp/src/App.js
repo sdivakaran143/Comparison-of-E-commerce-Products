@@ -12,6 +12,7 @@ export default function App() {
             {amzdata.amazon.map(x => {
                 return( 
                   <div key={x.id}>
+                  <img src={x.image} alt={x.image}/><br/>
                   <a href={x.link}>{x.name}</a><br/>
                   </div>
                 )
@@ -22,6 +23,7 @@ export default function App() {
                   {flipdata.flipkart.map(y => {
                       return( 
                         <div key={y.id}>
+                        <img src={y.image} alt={y.name}/><br/>
                         <a href={y.link}>{y.name}</a><br/>
                         </div>
                       )

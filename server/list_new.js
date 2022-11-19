@@ -9,7 +9,7 @@ let z=0;
 let amz=0;
 let flip=0;
 
-function storefilpkart(listname,listLink,requirements){
+function storefilpkart(listname,listLink,image,requirements){
     console.log("flipc   "+z++);
 
     for(let i=0;i<requirements.length;i++){
@@ -25,7 +25,8 @@ function storefilpkart(listname,listLink,requirements){
                 flipkartproducts.push({
                     id:++flip,
                     name:listname,
-                    link:("https://www.flipkart.com"+listLink)
+                    link:("https://www.flipkart.com"+listLink),
+                    image:image
                 });
   
             }
@@ -43,12 +44,12 @@ req(FlipkartLink,(error,response,html)=>{
         // console.log(requirements);
         $('._1AtVbE').each((i, val) => {
             if ($('div').hasClass('_2WkVRV')) {
-                storefilpkart(($(val).find('.IRpwTa').text()).toLowerCase(),$(val).find('.IRpwTa').attr('href'),requirements);
+                storefilpkart(($(val).find('.IRpwTa').text()).toLowerCase(),$(val).find('.IRpwTa').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
             } else if ($('div').hasClass('_4rR01T')) {
-                storefilpkart(($(val).find('._4rR01T').text()).toLowerCase(),$(val).find('._1fQZEK').attr('href'),requirements);
+                storefilpkart(($(val).find('._4rR01T').text()).toLowerCase(),$(val).find('._1fQZEK').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
             }
             else if ($('a').hasClass('s1Q9rs')) {
-                storefilpkart(($(val).find('.s1Q9rs').text()).toLowerCase(),$(val).find('.s1Q9rs').attr('href'),requirements);
+                storefilpkart(($(val).find('.s1Q9rs').text()).toLowerCase(),$(val).find('.s1Q9rs').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
             } else { console.log("Not Found") }
         })
     }
@@ -67,7 +68,7 @@ req(FlipkartLink,(error,response,html)=>{
     // hp victus
 
 
-let Name ="hp victus".toLowerCase().trim();
+let Name ="asssssus vivoboook".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
@@ -102,9 +103,11 @@ function findtheproductinamazon(AmazonLink,requirements){
                             amazonproducts.push({
                                 id:++amz,
                                 name:(listname).substring(0,n),
-                                link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href'))
+                                link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href')),
+                                image:$(val).find('.s-image').attr('src')
                             });
- 
+                            // console.log($('.s-image').attr('src'));
+
                         }
                     }
                 }
