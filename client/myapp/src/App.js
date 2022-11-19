@@ -3,6 +3,7 @@ import './App.css';
 import amzdata,{amazon} from "./database.json";
 import flipdata,{flipkart} from "./database.json";
 
+
 export default function App() {
   return (
           <div classname="main">
