@@ -21,7 +21,7 @@ function storefilpkart(listname,listLink,image,requirements){
                 // console.log(listname);
 
                 //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
-                 // findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                //  findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
                 flipkartproducts.push({
                     id:++flip,
                     name:listname,
@@ -68,7 +68,7 @@ req(FlipkartLink,(error,response,html)=>{
     // hp victus
 
 
-let Name ="asssssus vivoboook".toLowerCase().trim();
+let Name ="hp victus".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
