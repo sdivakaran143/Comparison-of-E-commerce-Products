@@ -3,6 +3,8 @@ val={};
 specobj={};
 speck=[];
 aboutarr=[]
+filpval={};
+flipspecobj={};
 
 // function  aboutFilter(about){
 //     temp=about.split("    ");
@@ -12,7 +14,12 @@ aboutarr=[]
 //         }
 //     }
 // }
-function specificationFilter(arr1,arr2){
+function flipkartSpecificationFliter(arr1,arr2){
+    for (let i = 0; i < arr1.length; i++) {
+        flipspecobj[arr1[i]]=arr2[i];
+    }
+}
+function amazonSpecificationFilter(arr1,arr2){
     
     for (let i = 0; i < arr1.length; i++) {
         specobj[arr1[i]]=arr2[i];
@@ -32,7 +39,7 @@ function specificationFilter(arr1,arr2){
     // console.log(obj);
 }
 
-function init(producturl) {
+function initamazon(producturl) {
     return new Promise((res, re) => {
         req({url: producturl, gzip: true},(error,response,html)=> {
             console.log("st");
@@ -73,7 +80,7 @@ function init(producturl) {
                 }
                 else arrr.push($(val).text())
             })
-            specificationFilter(arrl,arrr);
+            amazonSpecificationFilter(arrl,arrr);
             
              about=($("#feature-bullets")).text().trim();
             //  aboutFilter(about)
@@ -103,14 +110,68 @@ function updateAmazonJson(id){
     fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(databases,null,5));
     // console.log(user);
 }
+
+function updateflipkartJson(id){
+    const data = fs.readFileSync('./client/myapp/src/database.json', 'utf8')
+    const databases = JSON.parse(data)
+    // val = Object.assign(databases.flipkart[id].detials, val)
+    databases.flipkart[id].detials=flipval;
+    fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(databases,null,5));
+
+}
+
+function initflipkart(producturl){
+    return new Promise((res, re) => {
+        console.log("fst");
+        req(producturl,(error,response,html)=>{
+            if(!error){
+                const $=cherio.load(html);
+                var string=$(".B_NuCI").text().trim();
+
+                var productName=(string.substring(0,string.indexOf("(")));
+                var spec=(string.substring(string.indexOf("(")));
+                var price =($("._16Jk6d").text());
+                var ratting=($('._3LWZlK').text().substring(0,3)+" out of 5 stars");
+                var custrated=($("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)").text()+"found...!");
+fliparrl=[];fliparrr=[];
+                $("._1hKmbr").each((i,val)=>{
+                    fliparrl.push($(val).text());
+                })
+                $("._21lJbe").each((i,val)=>{
+                    fliparrr.push($(val).text());
+                })
+                flipkartSpecificationFliter(fliparrl,fliparrr);
+                // console.log(fliparrl);
+                // console.log(fliparrr);
+
+
+                flipval={
+                    productName:productName,
+                    specification:spec,
+                    price:price,
+                    ratting:ratting,
+                    cust:custrated,
+                    offer:$("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div.dyC4hf > div.CEmiEU > div > div._3Ay6Sb._31Dcoz > span").text()
+                    ,emi:"Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500*"
+                    ,deliveryChrage:"based on location"
+                    ,replacement:$("._2MJMLX").text()
+                    ,spec:flipspecobj
+                }
+            res();
+            }
+        })
+    })
+}
+
 module.exports={
-    Flipkartdetials : function (producturl){
-        
-    }, 
     Amazondetials:async function (producturl,id){
-        await init(producturl);
+        await initamazon(producturl);
         updateAmazonJson(id);
     },
+    Flipkartdetials :async function (producturl,id){
+        await initflipkart(producturl);
+        updateflipkartJson(id);
+    }, 
     // Amazondetials:(producturl)=>{
     //     init(producturl).then(console.log(val))
     // },

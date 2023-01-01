@@ -10,7 +10,7 @@ let amz=0;
 let flip=0;
 
 function storefilpkart(listname,listLink,image,requirements){
-    console.log("flipc   "+z++);
+    // console.log("flipc   "+z++);
 
     for(let i=0;i<requirements.length;i++){
             if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
@@ -21,7 +21,7 @@ function storefilpkart(listname,listLink,image,requirements){
                 // console.log(listname);
 
                 //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
-                 findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink),flip);
                 flipkartproducts.push({
                     id:++flip,
                     name:listname,
@@ -134,7 +134,7 @@ function findtheproductinamazon(AmazonLink,requirements){
 }
 let amlink=Name.replaceAll(" ","+");
 let AmazonLink="https://www.amazon.in/s?k="+amlink
-// findtheproductinamazon(AmazonLink,requirements)
+findtheproductinamazon(AmazonLink,requirements)
 
 //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
 ///html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[3]
