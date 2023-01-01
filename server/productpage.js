@@ -42,30 +42,49 @@ function amazonSpecificationFilter(arr1,arr2){
 function initamazon(producturl) {
     return new Promise((res, re) => {
         req({url: producturl, gzip: true},(error,response,html)=> {
+            // console.log(producturl);
             console.log("st");
             const $=cherio.load(html);
-            product=$("#title").text().trim();
+            product=$("#productTitle").text().trim();
             spec=(product.substring(product.indexOf("(")));
             if(product.indexOf("(")>-1){
-                product=product.substring(0,product.indexOf("("));
+                if(product.substring(0,product.indexOf("("))!=""){
+                    product=product.substring(0,product.indexOf("("));
+                };
             }
             if(!($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text())){
                 price=($("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
-                 if(!$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text()){
-                     price=("Unable to Fetch The Product Price ....")
+                 if(price==""){
+                     price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span:nth-child(2) > span.a-price-whole").text())
                  }
              }
              else{
                  price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
              }
-             var star;
+             var star="";
+             var rated="";
              //rating
              //=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star > span").text()).substring(0,18)
              for (let i = 0; i < 6; i++) {
-                    if(($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18)) 
-                        star=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18) 
+                    for (let j = 0; j <=9;j++) {
+                        if(($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i+"-"+j).text()).substring(0,18)) {
+                            star=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i+"-"+j).text()).substring(0,18)
+                            break;
+                        }
+                        else if(($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18)){
+                            star=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18);
+                            break;
+                        }
+                    }
+             }
+             if(star==""){
+                    star="0 ratings..."
              }
 
+             rated =$("#acrCustomerReviewText").text().substring(0,($("#acrCustomerReviewText").text()).indexOf("s")+1);
+             if(rated==""){
+                rated="0 customers rated.."
+             }
              var arrl=[];
              var arrr=[]
              $(".prodDetSectionEntry").each((i,val)=>{
@@ -84,18 +103,22 @@ function initamazon(producturl) {
             
              about=($("#feature-bullets")).text().trim();
             //  aboutFilter(about)
+            // if(price.length==""){
+            //     console.log("reacll...");
+            //     console.log(producturl);
+            //     // await initamazon(producturl);
+            // }
              val={
                 name:product,
                 price:price,
                 specification :spec,
                 rating:star
-                ,rated:$("#acrCustomerReviewText").text().substring(0,($("#acrCustomerReviewText").text()).indexOf("s")+1)
-                ,offer:($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text())
+                ,rated:rated,
+                offer:($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text())
                 ,emi:($("#inemi_feature_div > span:nth-child(1)").text())
                 ,deliveryChrage:($("#FREE_DELIVERY > div.a-section.a-spacing-none.icon-content > a").text().trim())
                 ,replcement:($("#RETURNS_POLICY > span > div.a-section.a-spacing-none.icon-content > a").text())
-                ,spec:specobj,
-                arr:aboutarr
+                ,spec:specobj
             }
             // console.log(val);
             res()
@@ -143,8 +166,6 @@ fliparrl=[];fliparrr=[];
                 flipkartSpecificationFliter(fliparrl,fliparrr);
                 // console.log(fliparrl);
                 // console.log(fliparrr);
-
-
                 flipval={
                     productName:productName,
                     specification:spec,

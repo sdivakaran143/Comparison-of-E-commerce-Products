@@ -70,7 +70,7 @@ req(FlipkartLink,(error,response,html)=>{
     // hp victus
 
 
-let Name ="hp paviloin".toLowerCase().trim();
+let Name ="oppo reno 7".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
@@ -101,12 +101,12 @@ function findtheproductinamazon(AmazonLink,requirements){
                                 n=listname.length;
                             }
                             // AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
-            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')),amz);
+            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-text-normal').attr('href')),amz);
                             // findmainpage.Amazondetials("https://www.amazon.in//HP-16-1-inch-Micro-Edge-Anti-Glare-16-C0136Ax/dp/B09SPZY67Q/ref=sr_1_3?keywords=hp+omen&qid=1672555776&sr=8-3")
                             amazonproducts.push({
                                 id:++amz,
                                 name:(listname).substring(0,n),
-                                link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href')),
+                                link:"https://www.amazon.in/"+($(val).find('.a-text-normal').attr('href')),
                                 image:$(val).find('.s-image').attr('src'),
                                 detials:{}
                             });
