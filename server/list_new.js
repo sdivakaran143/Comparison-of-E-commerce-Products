@@ -21,18 +21,20 @@ function storefilpkart(listname,listLink,image,requirements){
                 // console.log(listname);
 
                 //  if(listname.includes(requirements[i])){FlipkartObj[listname]=("https://www.flipkart.com"+listLink);  
-                //  findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
+                 findmainpage.Flipkartdetials(("https://www.flipkart.com"+listLink));
                 flipkartproducts.push({
                     id:++flip,
                     name:listname,
                     link:("https://www.flipkart.com"+listLink),
-                    image:image
+                    image:image,
+                    detials:{}
                 });
   
             }
             
         }
 }
+
 
 function findtheproductinflipkart(FlipkartLink,requirements){
     console.log("flip  "+z++);
@@ -68,7 +70,7 @@ req(FlipkartLink,(error,response,html)=>{
     // hp victus
 
 
-let Name ="hp victus".toLowerCase().trim();
+let Name ="hp paviloin".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
@@ -76,8 +78,8 @@ requirements=Name.split(" ");
 findtheproductinflipkart(FlipkartLink,requirements);
 
 function findtheproductinamazon(AmazonLink,requirements){
-    // req({url: AmazonLink, gzip: true}, (error,response,html) => {
-        req(AmazonLink,(error,response,html)=>{
+    req({url: AmazonLink, gzip: true}, (error,response,html) => {
+        // req(AmazonLink,(error,response,html)=>{
             console.log("amzon  "+z++);
         if(!error){
             const $=cherio.load(html);
@@ -98,15 +100,18 @@ function findtheproductinamazon(AmazonLink,requirements){
                             if(listname.indexOf("₹")==-1){
                                 n=listname.length;
                             }
-                            AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
-                            // findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')));
+                            // AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
+            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href')),amz);
+                            // findmainpage.Amazondetials("https://www.amazon.in//HP-16-1-inch-Micro-Edge-Anti-Glare-16-C0136Ax/dp/B09SPZY67Q/ref=sr_1_3?keywords=hp+omen&qid=1672555776&sr=8-3")
                             amazonproducts.push({
                                 id:++amz,
                                 name:(listname).substring(0,n),
                                 link:"https://www.amazon.in/"+($(val).find('.a-link-normal').attr('href')),
-                                image:$(val).find('.s-image').attr('src')
+                                image:$(val).find('.s-image').attr('src'),
+                                detials:{}
                             });
                             // console.log($('.s-image').attr('src'));
+                            // console.log(amz+findmainpage.print());
 
                         }
                     }
@@ -129,7 +134,7 @@ function findtheproductinamazon(AmazonLink,requirements){
 }
 let amlink=Name.replaceAll(" ","+");
 let AmazonLink="https://www.amazon.in/s?k="+amlink
-findtheproductinamazon(AmazonLink,requirements)
+// findtheproductinamazon(AmazonLink,requirements)
 
 //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
 ///html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[3]

@@ -4,7 +4,7 @@ function ChromaDetials(chromalink){
         if(!error){
             const $ =cherio.load(html);
             console.log($(".pd-title").text());
-            console.log($(".tax-text").text());
+            console.log($(".old-price").text());
                
         }
            
@@ -13,3 +13,4 @@ function ChromaDetials(chromalink){
 }
 let chromalink="https://www.croma.com/mi-5a-108-cm-43-inch-full-hd-led-smart-android-tv-with-google-assistance-2022-model-/p/259209";
 ChromaDetials(chromalink);
+//document.querySelector("#pdp-product-price")//*[@id="pdp-product-price"]

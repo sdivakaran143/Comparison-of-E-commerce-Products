@@ -1,41 +1,121 @@
-const axios =require("axios"),cherio=require('cheerio'),req =require("request");
+const axios =require("axios"),cherio=require('cheerio'),req =require("request"),fs=require("fs");
+val={};
+specobj={};
+speck=[];
+aboutarr=[]
+
+// function  aboutFilter(about){
+//     temp=about.split("    ");
+//     for (let i = 0; i < temp.length; i++) {
+//         if(temp[i].length>10){ 
+//             aboutarr.push(temp[i])
+//         }
+//     }
+// }
+function specificationFilter(arr1,arr2){
+    
+    for (let i = 0; i < arr1.length; i++) {
+        specobj[arr1[i]]=arr2[i];
+    }
+
+    // specif=specif.substring(specif.indexOf("Brand"));
+    // specif=specif.substring(0,specif.indexOf("\n"));
+    // arr=specif.split("     ");
+    // for (let index = 0; index < arr.length; index++) {
+    //     if((arr[index].length)>1){
+    //         speck.push(arr[index]);
+    //     }
+    // }
+    // for (let index = 0; index < speck.length; index+=2) {
+    //    obj[speck[index]]=speck[index+1];
+    // }
+    // console.log(obj);
+}
+
+function init(producturl) {
+    return new Promise((res, re) => {
+        req({url: producturl, gzip: true},(error,response,html)=> {
+            console.log("st");
+            const $=cherio.load(html);
+            product=$("#title").text().trim();
+            spec=(product.substring(product.indexOf("(")));
+            if(product.indexOf("(")>-1){
+                product=product.substring(0,product.indexOf("("));
+            }
+            if(!($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text())){
+                price=($("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
+                 if(!$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text()){
+                     price=("Unable to Fetch The Product Price ....")
+                 }
+             }
+             else{
+                 price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
+             }
+             var star;
+             //rating
+             //=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star > span").text()).substring(0,18)
+             for (let i = 0; i < 6; i++) {
+                    if(($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18)) 
+                        star=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i).text()).substring(0,18) 
+             }
+
+             var arrl=[];
+             var arrr=[]
+             $(".prodDetSectionEntry").each((i,val)=>{
+                 if(($(val).text()).charAt(0)==" "){
+                    arrl.push(($(val).text()).substring(1))
+                }
+                else arrl.push($(val).text())
+            })
+            $(".prodDetAttrValue").each((i,val)=>{
+                if((($(val).text()).charAt(0))=="\n"){
+                    arrr.push(($(val).text()).substring(18))
+                }
+                else arrr.push($(val).text())
+            })
+            specificationFilter(arrl,arrr);
+            
+             about=($("#feature-bullets")).text().trim();
+            //  aboutFilter(about)
+             val={
+                name:product,
+                price:price,
+                specification :spec,
+                rating:star
+                ,rated:$("#acrCustomerReviewText").text().substring(0,($("#acrCustomerReviewText").text()).indexOf("s")+1)
+                ,offer:($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text())
+                ,emi:($("#inemi_feature_div > span:nth-child(1)").text())
+                ,deliveryChrage:($("#FREE_DELIVERY > div.a-section.a-spacing-none.icon-content > a").text().trim())
+                ,replcement:($("#RETURNS_POLICY > span > div.a-section.a-spacing-none.icon-content > a").text())
+                ,spec:specobj,
+                arr:aboutarr
+            }
+            // console.log(val);
+            res()
+        })
+})
+}
+function updateAmazonJson(id){
+    const data = fs.readFileSync('./client/myapp/src/database.json', 'utf8')
+    const databases = JSON.parse(data)
+    val = Object.assign(databases.amazon[id].detials, val)
+    databases.amazon[id].detials=val;
+    fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(databases,null,5));
+    // console.log(user);
+}
 module.exports={
     Flipkartdetials : function (producturl){
-        axios.get(producturl).then(({data})=>{
-            const $ =cherio.load(data);
-            var string=$(".B_NuCI").text().trim();
-            console.log("\nthe price at Flipkart  : ");
-            console.log("The products is : "+string.substring(0,string.indexOf("(")));
-            console.log("Product spec is : "+string.substring(string.indexOf("(")));
-            console.log("The products value is "+$("._16Jk6d").text());
-            console.log("Star Ratting : "+$('._3LWZlK').text().substring(0,3)+" out of 5 stars");
-            console.log($("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)").text()+"found...!");
-            //console.log(data);
-        });
+        
     }, 
-    Amazondetials:function (producturl){
-        axios.get(producturl).then(({data})=>{
-            const $ =cherio.load(data);
-            var string=$("#title").text().trim();
-            console.log("\nthe price at Amazon  : ");
-            console.log("The products is : "+string.substring(0,string.indexOf("(")));
-            console.log("Product spec is : "+string.substring(string.indexOf("(")));
-            if(!($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text())){
-               console.log("The products value is "+$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
-                if(!$("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text()){
-                    console.log("Unable to Fetch The Product Price ....")
-                }
-            }
-            else{
-                console.log("The products value is ₹"+$("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
-            }//console.log(data);
-    
-            console.log("Star Rattings : "+$("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4-5 > span").text())
-            console.log($('#acrCustomerReviewText').text()+" found...!");
-        });
+    Amazondetials:async function (producturl,id){
+        await init(producturl);
+        updateAmazonJson(id);
     },
+    // Amazondetials:(producturl)=>{
+    //     init(producturl).then(console.log(val))
+    // },
     print:function hai(){
-        console.log("hai...");
+        console.log(val);
     }
 };
 
