@@ -70,7 +70,7 @@ req(FlipkartLink,(error,response,html)=>{
     // hp victus
 
 
-let Name ="oppo reno 7".toLowerCase().trim();
+let Name ="hp pavilion".toLowerCase().trim();
 
 let fliplink=Name.replaceAll(" ","%20%20");
 let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
@@ -83,9 +83,11 @@ function findtheproductinamazon(AmazonLink,requirements){
             console.log("amzon  "+z++);
         if(!error){
             const $=cherio.load(html);
-            // console.log($(".a-text-italic").text());
+            // console.log($("#search > span > div > h1 > div > div.sg-col-14-of-20.sg-col.s-breadcrumb.sg-col-10-of-16.sg-col-6-of-12 > div > div > span.a-color-state.a-text-bold").text());
             if(""!=$(".a-text-italic").text()){
                 requirements=$(".a-text-italic").text().toLowerCase().split(" "); 
+                // var reqname=($("#search > span > div > h1 > div > div.sg-col-14-of-20.sg-col.s-breadcrumb.sg-col-10-of-16.sg-col-6-of-12 > div > div > span.a-color-state.a-text-bold").text().trim().toLowerCase())
+                // requirements=(reqname.substring(1,reqname.length-1)).split(" "); 
             }
             console.log(requirements);
             $(".s-card-container").each((i,val)=>{

@@ -53,19 +53,17 @@ function initamazon(producturl) {
                 };
             }
             if(!($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text())){
-                price=($("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
-                 if(price==""){
-                     price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span:nth-child(2) > span.a-price-whole").text())
+            price=($("#corePrice_desktop > div > table > tbody > tr:nth-child(2) > td.a-span12 > span.a-price.a-text-price.a-size-medium.apexPriceToPay > span.a-offscreen").text());
+                if(price==""){
+                    price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-price.aok-align-center.reinventPricePriceToPayMargin.priceToPay > span:nth-child(2) > span.a-price-whole").text())
                  }
              }
              else{
-                 price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
+                price=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span > span:nth-child(2) > span.a-price-whole").text());
              }
-             var star="";
-             var rated="";
              //rating
              //=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star > span").text()).substring(0,18)
-             for (let i = 0; i < 6; i++) {
+             /*for (let i = 0; i < 6; i++) {
                     for (let j = 0; j <=9;j++) {
                         if(($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i+"-"+j).text()).substring(0,18)) {
                             star=($("#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-"+i+"-"+j).text()).substring(0,18)
@@ -76,12 +74,16 @@ function initamazon(producturl) {
                             break;
                         }
                     }
-             }
-             if(star==""){
-                    star="0 ratings..."
-             }
-
-             rated =$("#acrCustomerReviewText").text().substring(0,($("#acrCustomerReviewText").text()).indexOf("s")+1);
+             }*/
+             let star = $('#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4-5 > span').text() + ' Rated by ' + $('#acrCustomerReviewText').text() + ' People';
+             if ($('#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4-5 > span').text().length == 0) {
+                 star = $('#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4 > span').text() + ' Rated by ' + $('#acrCustomerReviewText').text() + ' People';
+                 if ($('#acrPopover > span.a-declarative > a > i.a-icon.a-icon-star.a-star-4 > span').text().length == 0) {
+                     star = "0 ratings";
+                 }
+                }
+                
+             let rated =$("#acrCustomerReviewText").text().substring(0,($("#acrCustomerReviewText").text()).indexOf("s")+1);
              if(rated==""){
                 rated="0 customers rated.."
              }
@@ -112,8 +114,8 @@ function initamazon(producturl) {
                 name:product,
                 price:price,
                 specification :spec,
-                rating:star
-                ,rated:rated,
+                rating:star.substring(0,17),
+                rated:rated,
                 offer:($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text())
                 ,emi:($("#inemi_feature_div > span:nth-child(1)").text())
                 ,deliveryChrage:($("#FREE_DELIVERY > div.a-section.a-spacing-none.icon-content > a").text().trim())
