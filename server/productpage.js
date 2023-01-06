@@ -102,8 +102,12 @@ function initamazon(producturl) {
                 else arrr.push($(val).text())
             })
             amazonSpecificationFilter(arrl,arrr);
+            let offerpercentage=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text());
+            if(offerpercentage==""){
+                offerpercentage="0%"
+            }
             
-             about=($("#feature-bullets")).text().trim();
+            //  about=($("#feature-bullets")).text().trim();
             //  aboutFilter(about)
             // if(price.length==""){
             //     console.log("reacll...");
@@ -116,7 +120,7 @@ function initamazon(producturl) {
                 specification :spec,
                 rating:star.substring(0,17),
                 rated:rated,
-                offer:($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text())
+                offer:offerpercentage
                 ,emi:($("#inemi_feature_div > span:nth-child(1)").text())
                 ,deliveryChrage:($("#FREE_DELIVERY > div.a-section.a-spacing-none.icon-content > a").text().trim())
                 ,replcement:($("#RETURNS_POLICY > span > div.a-section.a-spacing-none.icon-content > a").text())
@@ -158,7 +162,7 @@ function initflipkart(producturl){
                 var price =($("._16Jk6d").text());
                 var ratting=($('._3LWZlK').text().substring(0,3)+" out of 5 stars");
                 var custrated=($("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div:nth-child(2) > div > div > span._2_R_DZ > span > span:nth-child(1)").text()+"found...!");
-fliparrl=[];fliparrr=[];
+        fliparrl=[];fliparrr=[];
                 $("._1hKmbr").each((i,val)=>{
                     fliparrl.push($(val).text());
                 })
