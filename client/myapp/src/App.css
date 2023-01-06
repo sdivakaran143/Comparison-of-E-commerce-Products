@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main{
+   background-color:rebeccapurple
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .amazoncard ,.flipkartcard{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+  .cards{
+    height: 30%;
   }
+  .productimage{
+    height: 100px;
+    padding-top: 30px;
+  }
+  .cardcontent{
+    margin: 0px 0px 0px 15px ;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: dotted red 0.1px; */
 }
+nav{
+    align-items: center;
+    display: flex;    
+    justify-content: space-between;
+    background-color: antiquewhite;
+    height: 3.5rem;
+}
+
+.nav-li{
+    width: 40%;
+    display: flex;    
+    justify-content: space-around;  
+    text-decoration: none;
+}
+.searchDiv{
+    display:grid;
+    place-items: end;
+}
+
+.body-content{
+    height: 88.7vh;
+    background:rgb(255, 176, 176);
+    display: grid;
+}
+
+.amazon-content ,.flipkart-content{
+    height: 83vh;
+    width: 49%;
+    background-color: rgb(240, 204, 204);
+    /* overflow-y: scroll; */
+}
+.card_cont{
+    height: 78.5vh;
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{ 
+    width: 0.5em;
+}
+::-webkit-scrollbar-track{ 
+    background:rgb(240, 204, 204);
+    width: 260px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(246, 250, 243);
+    border-radius: 30px;
+ }
+
+.amazon-title ,.flipkart-title{
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: bisque;
+}
+
+.product-img{
+    height: 7em;
+    width: 8em;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.card-details{
+    padding-left: 2%;
+    display: grid;
+    width: 70%;
+    align-items: center;   
+    overflow: none;
+}
+
+.btn{
+    align-items: center;
+    border-radius: 30%;
+    margin: 30px;
+    width: 4vw;
+    height: 7vh;
+}
+
+.content-element{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-compare{
+    display: grid;
+    place-items: center;
+}
+.compare-btn{
+    width: 8em;
+    height: 4vh;
+    border-radius: 20px;
+    background: rgb(137, 101, 235);
+    color: aliceblue;
+}
+
+
+

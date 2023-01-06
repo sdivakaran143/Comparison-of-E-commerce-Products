@@ -43,7 +43,7 @@ function initamazon(producturl) {
     return new Promise((res, re) => {
         req({url: producturl, gzip: true},(error,response,html)=> {
             // console.log(producturl);
-            console.log("st");
+            console.log("Ast");
             const $=cherio.load(html);
             product=$("#productTitle").text().trim();
             spec=(product.substring(product.indexOf("(")));
@@ -128,26 +128,26 @@ function initamazon(producturl) {
 })
 }
 function updateAmazonJson(id){
-    const data = fs.readFileSync('./client/myapp/src/database.json', 'utf8')
+    const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
     const databases = JSON.parse(data)
     val = Object.assign(databases.amazon[id].detials, val)
     databases.amazon[id].detials=val;
-    fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(databases,null,5));
+    fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
     // console.log(user);
 }
 
 function updateflipkartJson(id){
-    const data = fs.readFileSync('./client/myapp/src/database.json', 'utf8')
+    const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
     const databases = JSON.parse(data)
     // val = Object.assign(databases.flipkart[id].detials, val)
     databases.flipkart[id].detials=flipval;
-    fs.writeFileSync('./client/myapp/src/database.json', JSON.stringify(databases,null,5));
+    fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
 
 }
 
 function initflipkart(producturl){
     return new Promise((res, re) => {
-        console.log("fst");
+        console.log("Fst");
         req(producturl,(error,response,html)=>{
             if(!error){
                 const $=cherio.load(html);
@@ -194,13 +194,13 @@ module.exports={
     Flipkartdetials :async function (producturl,id){
         await initflipkart(producturl);
         updateflipkartJson(id);
-    }, 
+    }
     // Amazondetials:(producturl)=>{
     //     init(producturl).then(console.log(val))
     // },
-    print:function hai(){
-        console.log(val);
-    }
+    // print:function hai(){
+    //     console.log(val);
+    // }
 };
 
 // const amlin="https://www.amazon.in/Redmi-inches-Smart-L43M6-RA-Android/dp/B09G73T643/ref=sr_1_2_sspa?keywords=mi+tv&qid=1668266401&qu=eyJxc2MiOiI0LjcyIiwicXNhIjoiNC4zOCIsInFzcCI6IjMuNjMifQ%3D%3D&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1";

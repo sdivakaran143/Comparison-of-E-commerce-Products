@@ -1,182 +1,391 @@
 {
      "amazon": [
           {
-               "name": "hp victus amd ryzen 5 5600h 16.1 inches(40cm) fhd gaming laptop (8gb ram/512gb ssd/4gb radeon rx5500m graphics/flicker free display/windows 11 home/ms office/mica silver/2.48 kg), 16-e0162ax, black hp victus amd ryzen 5 5600h 16.1 inches(40cm) fhd gaming laptop (8gb ram/512gb ssd/4gb radeon rx5500m graphics/flicker free display/windows 11 home/ms office/mica silver/2.48 kg), 16-e0162ax, black",
-               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MToxODY1MjIxNjYyNzI1NzI5OjE2Njg4MzE3MTI6c3BfYXRmOjIwMDQ2MjQ1NjUzNDk4OjowOjo&url=%2FHP-RX5500M-Graphics-Flicker-16-e0162AX%2Fdp%2FB098QBT5KT%2Fref%3Dice_ac_b_dpb_sspa%3Fkeywords%3Dhp%2Bvictus%26qid%3D1668831712%26qu%3DeyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%253D%253D%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1"
+               "id": 1,
+               "name": "vivo v15 pro (ruby red, 6gb ram, 128gb storage) vivo v15 pro (ruby red, 6gb ram, 128gb storage)",
+               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07KX1KY4N/ref=sr_1_1?keywords=vivo+v15+pro&qid=1672947280&sr=8-1",
+               "image": "https://m.media-amazon.com/images/I/61WFEAE5aKL._AC_UY218_.jpg",
+               "detials": {
+                    "name": "Vivo V15 Pro ",
+                    "price": "28,000",
+                    "specification": "(Ruby Red, 6GB RAM, 128GB Storage)",
+                    "rating": "4.4 out of 5 star",
+                    "rated": "9,340 ratings",
+                    "offer": "-3%",
+                    "emi": " EMI starts at ₹1,338 per month. ",
+                    "deliveryChrage": "",
+                    "replcement": " 7 days Replacement ",
+                    "spec": {
+                         " OS  ": "Android 9.0 ",
+                         " RAM  ": "6 GB ",
+                         "Product Dimensions ": "15.7 x 0.8 x 1.5 cm; 185 Grams ",
+                         "Batteries ": "1 A batteries required. (included) ",
+                         "Item model number ": "1818 ",
+                         " Wireless communication technologies  ": "Bluetooth, Wi-Fi ",
+                         " Connectivity technologies  ": "Bluetooth, Wi-Fi, USB ",
+                         " GPS  ": "GLONASS ",
+                         " Special features  ": "Dual SIM;GPS;Music Player;Video Player;FM Radio;Accelerometer;Ambient Light Sensor;Proximity Sensor;eCompass;Virtual Gyroscope;Fingerprint sensor;E-mail ",
+                         " Other display features  ": "Wireless ",
+                         " Device interface - primary  ": "Touchscreen ",
+                         "Resolution ": "2340 x 1080 ",
+                         " Other camera features  ": "Rear ",
+                         " Audio Jack  ": "USB ",
+                         " Form factor ": "Touchscreen Phone ",
+                         " Colour  ": "Ruby Red ",
+                         " Battery Power Rating  ": "3700 ",
+                         " Whats in the box  ": "Handset, Earphone, User Manual, Micro USB to USB Cable, USB Power, Adapter, SIM Ejector Pin and Protective Case ",
+                         "Manufacturer ": " 15.7 x 0.8 x 1.5 Centimeters ",
+                         "Country of Origin ": "India ",
+                         "Item Weight ": "185 g ",
+                         "ASIN ": " B07KX1KY4N ",
+                         "Customer Reviews": " 20 February 2019 ",
+                         "Best Sellers Rank ": " Vivo ",
+                         "Date First Available ": " Vivo Mobile India Pvt. Ltd. ",
+                         "Packer ": " 1 Unit ",
+                         "Item Dimensions LxWxH ": " Mobile ",
+                         " Display technology  ": "AMOLED ",
+                         " Colours displayed  ": "19.5:9 Aspect Ratio "
+                    }
+               }
           },
           {
-               "name": "hp victus gaming latest 12th gen intel core i5 processor 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/bl kb/win 11/mso/b&o/alexa/xbox pass), 15-fa0070tx hp victus gaming latest 12th gen intel core i5 processor 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/bl kb/win 11/mso/b&o/alexa/xbox pass), 15-fa0070tx",
-               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MToxODY1MjIxNjYyNzI1NzI5OjE2Njg4MzE3MTI6c3BfYXRmOjIwMDY1NTcyMTMwOTk4OjowOjo&url=%2FHP-Victus-Processor-Graphics-15-fa0070TX%2Fdp%2FB0B74ZY9R1%2Fref%3Dsr_1_2_sspa%3Fkeywords%3Dhp%2Bvictus%26qid%3D1668831712%26qu%3DeyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%253D%253D%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1"
-          },
-          {
-               "name": "hp victus amd ryzen 5 5600h 16.1 inches(40cm) fhd gaming laptop (8gb ram/512gb ssd/4gb radeon rx5500m graphics/flicker free display/windows 11 home/ms office/mica silver/2.48 kg), 16-e0162ax, black hp victus amd ryzen 5 5600h 16.1 inches(40cm) fhd gaming laptop (8gb ram/512gb ssd/4gb radeon rx5500m graphics/flicker free display/windows 11 home/ms office/mica silver/2.48 kg), 16-e0162ax, black",
-               "link": "https://www.amazon.in//HP-RX5500M-Graphics-Flicker-16-e0162AX/dp/B098QBT5KT/ref=ice_ac_b_dpb?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-3"
-          },
-          {
-               "name": "hp victus latest amd ryzen 7-5800h 16.1 inch(40.9 cm) fhd gaming laptop (16gb ram/ 512gb ssd/4gb rtx 3050 graphics/ flicker free/144hz display/b&o/backlit kb/windows 11 home/mso/2.48 kg) 16-e0351ax hp victus latest amd ryzen 7-5800h 16.1 inch(40.9 cm) fhd gaming laptop (16gb ram/ 512gb ssd/4gb rtx 3050 graphics/ flicker free/144hz display/b&o/backlit kb/windows 11 home/mso/2.48 kg) 16-e0351ax",
-               "link": "https://www.amazon.in//HP-7-5800H-Processor-Graphics-16-E0351ax/dp/B09LM3RZ1Q/ref=sr_1_omk_4?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-4"
-          },
-          {
-               "name": "hp victus gaming latest 12th gen intel core i5 processor 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/bl kb/win 11/mso/b&o/alexa/xbox pass), 15-fa0070tx hp victus gaming latest 12th gen intel core i5 processor 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/bl kb/win 11/mso/b&o/alexa/xbox pass), 15-fa0070tx",
-               "link": "https://www.amazon.in//HP-Victus-Processor-Graphics-15-fa0070TX/dp/B0B74ZY9R1/ref=sr_1_5?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-5"
-          },
-          {
-               "name": "hp victus latest amd ryzen 5-5600h processor 16.1 inches fhd gaming laptop(8gb ram/512gb ssd/4gb geforce rtx 3050 graphics/144 hz/7ms response time/windows 11 home/mso/b&o audio/2.48 kg, 16-e0350ax hp victus latest amd ryzen 5-5600h processor 16.1 inches fhd gaming laptop(8gb ram/512gb ssd/4gb geforce rtx 3050 graphics/144 hz/7ms response time/windows 11 home/mso/b&o audio/2.48 kg, 16-e0350ax",
-               "link": "https://www.amazon.in//HP-Processor-Graphics-Response-16-E0350AX/dp/B09RX2S3C8/ref=sr_1_6?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-6"
-          },
-          {
-               "name": "hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (16gb ram/512gb ssd/rtx 3050ti 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0354tx hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (16gb ram/512gb ssd/rtx 3050ti 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0354tx",
-               "link": "https://www.amazon.in//HP-Graphics-Response-Backlit-15-fa0354TX/dp/B0B5R92VP6/ref=sr_1_7?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-7"
-          },
-          {
-               "name": "hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512 gb ssd/144 hz/geforce gtx 1650/alexa/b&o/backlit keyboard, windows 11 home, /ms office),16-e0301ax, mica silver hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512 gb ssd/144 hz/geforce gtx 1650/alexa/b&o/backlit keyboard, windows 11 home, /ms office),16-e0301ax, mica silver",
-               "link": "https://www.amazon.in//Processor-Geforce-Backlit-Keyboard-16-E0301Ax/dp/B09RX35BKN/ref=sr_1_8?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-8"
-          },
-          {
-               "name": "hp victus 12th gen intel core i5 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0350tx hp victus 12th gen intel core i5 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0350tx",
-               "link": "https://www.amazon.in//HP-Graphics-Response-Backlit-15-fa0350TX/dp/B0B5RC7MLY/ref=sr_1_9?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-9"
-          },
-          {
-               "name": "hp victus gaming amd ryzen 7 5800h, 16.1-inch(40.9 cm) fhd gaming laptop (8gb ram/512gb ssd/144 hz/geforce rtx 3050 4gb graphics/backlit kb/win 11/xbox game pass(30 days)/mso 2021),16-e0305ax hp victus gaming amd ryzen 7 5800h, 16.1-inch(40.9 cm) fhd gaming laptop (8gb ram/512gb ssd/144 hz/geforce rtx 3050 4gb graphics/backlit kb/win 11/xbox game pass(30 days)/mso 2021),16-e0305ax",
-               "link": "https://www.amazon.in//HP-16-1-inch-GeForce-Graphics-16-e0305ax/dp/B0B2KGXYVX/ref=sr_1_10?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-10"
-          },
-          {
-               "name": "hp victus latest amd ryzen 7-5800h processor 16.1inch(40.9cm) qhd gaming laptop (16gb ram/ 1tb ssd/6gb rtx 3060 graphics/ flicker free/165hz/3 ms response time/alexa/win 11/ mso/ 2.48 kg)- 16-e0362ax hp victus latest amd ryzen 7-5800h processor 16.1inch(40.9cm) qhd gaming laptop (16gb ram/ 1tb ssd/6gb rtx 3060 graphics/ flicker free/165hz/3 ms response time/alexa/win 11/ mso/ 2.48 kg)- 16-e0362ax",
-               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MToxODY1MjIxNjYyNzI1NzI5OjE2Njg4MzE3MTI6c3BfbXRmOjIwMDQ2MjUzODcwMDk4OjowOjo&url=%2FHP-Processor-16-1inch-Graphics-16-e0362ax%2Fdp%2FB09LM6CYC4%2Fref%3Dsr_1_11_sspa%3Fkeywords%3Dhp%2Bvictus%26qid%3D1668831712%26qu%3DeyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%253D%253D%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1"
-          },
-          {
-               "name": "hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512 gb ssd/144 hz/geforce gtx 1650/alexa/b&o/backlit keyboard, windows 11 home, /ms office),16-e0301ax, mica silver hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512 gb ssd/144 hz/geforce gtx 1650/alexa/b&o/backlit keyboard, windows 11 home, /ms office),16-e0301ax, mica silver",
-               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MToxODY1MjIxNjYyNzI1NzI5OjE2Njg4MzE3MTI6c3BfbXRmOjIwMDgzNDE1ODU0NDk4OjowOjo&url=%2FProcessor-Geforce-Backlit-Keyboard-16-E0301Ax%2Fdp%2FB09RX35BKN%2Fref%3Dsr_1_12_sspa%3Fkeywords%3Dhp%2Bvictus%26qid%3D1668831712%26qu%3DeyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%253D%253D%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1"
-          },
-          {
-               "name": "hp victus gaming amd ryzen 7 5800h 16.1-inch(40.9 cm) fhd gaming laptop (8gb ram/512gb ssd/144 hz/7ms response time/gtx 1650 4gb graphics/backlit kb/xbox game pass(30 days)/win 11/mso),16-e0650ax hp victus gaming amd ryzen 7 5800h 16.1-inch(40.9 cm) fhd gaming laptop (8gb ram/512gb ssd/144 hz/7ms response time/gtx 1650 4gb graphics/backlit kb/xbox game pass(30 days)/win 11/mso),16-e0650ax",
-               "link": "https://www.amazon.in//HP-16-1-inch-Response-Graphics-16-e0650ax/dp/B0B2KGJ212/ref=sr_1_13?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-13"
-          },
-          {
-               "name": "hp victus 11th gen intel core i7-11800h 16.1\" fhd gaming laptop (16gb ram/512gb ssd/144 hz/300 nits/7 ms response time/geforce rtx 3060 6gb graphics/backlit kb/win11/mso) 16-d0361tx performance blue hp victus 11th gen intel core i7-11800h 16.1\" fhd gaming laptop (16gb ram/512gb ssd/144 hz/300 nits/7 ms response time/geforce rtx 3060 6gb graphics/backlit kb/win11/mso) 16-d0361tx performance blue",
-               "link": "https://www.amazon.in//HP-i7-11800H-Response-16-d0361TX-Performance/dp/B0B299MTHJ/ref=sr_1_14?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-14"
-          },
-          {
-               "name": "hp victus 12th gen intel core i5 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0165tx hp victus 12th gen intel core i5 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0165tx",
-               "link": "https://www.amazon.in//HP-Graphics-Response-Backlit-15-fa0165TX/dp/B0B5R93RSL/ref=sr_1_15?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-15"
-          },
-          {
-               "name": "hp victus amd ryzen 5-5600h 15.6 inches/39.6 cm fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/9ms response time/windows 11/mso/backlit kb/b&o audio/xbox pass, 30 day) , 15-fb0040ax hp victus amd ryzen 5-5600h 15.6 inches/39.6 cm fhd gaming laptop (8gb ram/512gb ssd/gtx 1650 4gb graphics/144hz/9ms response time/windows 11/mso/backlit kb/b&o audio/xbox pass, 30 day) , 15-fb0040ax",
-               "link": "https://www.amazon.in//HP-5-5600H-Graphics-Response-15-fb0040AX/dp/B0B5RDSSWR/ref=sr_1_16?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-16"
-          },
-          {
-               "name": "hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/alexa/xbox pass), 15-fa0073tx hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/alexa/xbox pass), 15-fa0073tx",
-               "link": "https://www.amazon.in//HP-Graphics-Response-Backlit-15-fa0073TX/dp/B0B752D4Z7/ref=sr_1_17?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-17"
-          },
-          {
-               "name": "hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512gb ssd/4gb gtx 1650 graphics/b&o audio/flicker free display/backlitkb/windows 10 home/ms office/2.48kg)16-e0075ax hp victus latest amd ryzen 5 5600h processor 16.1 inches fhd gaming laptop (8gb ram/512gb ssd/4gb gtx 1650 graphics/b&o audio/flicker free display/backlitkb/windows 10 home/ms office/2.48kg)16-e0075ax",
-               "link": "https://www.amazon.in//HP-Graphics-Flicker-Display-16-e0075AX/dp/B098QB1TPX/ref=sr_1_18?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-18"
-          },
-          {
-               "name": "hp victus amd ryzen 5-5600h 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fb0050ax hp victus amd ryzen 5-5600h 15.6 inch(39.6 cm) fhd gaming laptop (8gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fb0050ax",
-               "link": "https://www.amazon.in//HP-5-5600H-Graphics-Response-15-fb0050AX/dp/B0B5R97495/ref=sr_1_19?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-19"
-          },
-          {
-               "name": "hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (16gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0353tx hp victus 12th gen intel core i7 15.6 inch(39.6 cm) fhd gaming laptop (16gb ram/512gb ssd/rtx 3050 4gb graphics/144hz/9ms response time/win 11/mso/backlit kb/b&o audio/xbox pass(30 day)),15-fa0353tx",
-               "link": "https://www.amazon.in//HP-Graphics-Response-Backlit-15-fa0353TX/dp/B0B5R9K734/ref=sr_1_20?keywords=hp+victus&qid=1668831712&qu=eyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%3D%3D&sr=8-20"
-          },
-          {
-               "name": "hp victus latest amd ryzen 7-5800h 16.1 inch(40.9 cm) fhd gaming laptop (16gb ram/ 512gb ssd/4gb rtx 3050 graphics/ flicker free/144hz display/b&o/backlit kb/windows 11 home/mso/2.48 kg) 16-e0351ax hp victus latest amd ryzen 7-5800h 16.1 inch(40.9 cm) fhd gaming laptop (16gb ram/ 512gb ssd/4gb rtx 3050 graphics/ flicker free/144hz display/b&o/backlit kb/windows 11 home/mso/2.48 kg) 16-e0351ax",
-               "link": "https://www.amazon.in//sspa/click?ie=UTF8&spc=MToxODY1MjIxNjYyNzI1NzI5OjE2Njg4MzE3MTI6c3BfYnRmOjIwMDQ2MjQ1OTg2Mjk4OjowOjo&url=%2FHP-7-5800H-Processor-Graphics-16-E0351ax%2Fdp%2FB09LM3RZ1Q%2Fref%3Dsr_1_22_sspa%3Fkeywords%3Dhp%2Bvictus%26qid%3D1668831712%26qu%3DeyJxc2MiOiIzLjk4IiwicXNhIjoiMy41NSIsInFzcCI6IjIuNDYifQ%253D%253D%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1"
+               "id": 2,
+               "name": "vivo v15 pro (ruby red, 8gb ram, 128gb storage) vivo v15 pro (ruby red, 8gb ram, 128gb storage)",
+               "link": "https://www.amazon.in//Vivo-Storage-Additional-Exchange-Offers/dp/B07RKXBRM9/ref=sr_1_2?keywords=vivo+v15+pro&qid=1672947280&sr=8-2",
+               "image": "https://m.media-amazon.com/images/I/61WFEAE5aKL._AC_UY218_.jpg",
+               "detials": {
+                    "name": "Vivo V15 Pro ",
+                    "price": "25,000",
+                    "specification": "(Ruby Red, 8GB RAM, 128GB Storage)",
+                    "rating": "4.4 out of 5 star",
+                    "rated": "9,340 ratings",
+                    "offer": "-14%",
+                    "emi": " EMI starts at ₹1,194 per month. ",
+                    "deliveryChrage": "",
+                    "replcement": " 7 days Replacement ",
+                    "spec": {
+                         " OS  ": "Android 9.0 ",
+                         " RAM  ": "8 GB ",
+                         "Product Dimensions ": "15.7 x 0.8 x 1.5 cm; 185 Grams ",
+                         "Batteries ": "1 Lithium Ion batteries required. (included) ",
+                         "Item model number ": "1818 ",
+                         " Wireless communication technologies  ": "Bluetooth, Wi-Fi ",
+                         " Connectivity technologies  ": "GSM, (B38/40/41), 3G, 4G LTE, WCDMA, (B1/5/8), TDD, FDD, (B2/3/5/8), (B1/3/5/8) ",
+                         " GPS  ": "GLONASS ",
+                         " Special features  ": "Proximity Sensor, Dual SIM, E-compass, E-mail, Accelerometer, Ambient Light Sensor, Virtual Gyroscope,Fingerprint, GPS, FM Radio, Video Player, Music Player ",
+                         " Other display features  ": "Wireless ",
+                         " Device interface - primary  ": "Touchscreen ",
+                         "Resolution ": "2340 x 1080 ",
+                         " Other camera features  ": "32MP ",
+                         " Audio Jack  ": "USB ",
+                         " Form factor ": "Slate ",
+                         " Colour  ": "Ruby Red ",
+                         " Battery Power Rating  ": "3700 ",
+                         " Whats in the box  ": "Handset, Earphone, User Manual, Micro USB to USB Cable, USB Power, Adapter, SIM Ejector Pin, Protective Case ",
+                         "Manufacturer ": " 15.7 x 0.8 x 1.5 Centimeters ",
+                         "Country of Origin ": "India ",
+                         "Item Weight ": "185 g ",
+                         "ASIN ": " B07RKXBRM9 ",
+                         "Customer Reviews": " 6 May 2019 ",
+                         "Best Sellers Rank ": " Vivo ",
+                         "Date First Available ": " Vivo Mobile India Pvt. Ltd. ",
+                         "Packer ": " 1 Unit ",
+                         "Item Dimensions LxWxH ": " Mobile "
+                    }
+               }
           }
      ],
      "flipkart": [
           {
-               "name": "hp victus core i5 11th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050/14...",
-               "link": "https://www.flipkart.com/hp-victus-core-i5-11th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-144-hz-16-d0354tx-gaming-laptop/p/itm272629b3faa52?pid=COMGEVBGVFVBFJHE&lid=LSTCOMGEVBGVFVBFJHE2H2HV0&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGEVBGVFVBFJHE.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
+               "id": 1,
+               "name": "vivo v15 pro (topaz blue, 128 gb)",
+               "link": "https://www.flipkart.com/vivo-v15-pro-topaz-blue-128-gb/p/itmffmh3damhbuga?pid=MOBFG8X7ZQHYHX28&lid=LSTMOBFG8X7ZQHYHX28FHKERJ&marketplace=FLIPKART&q=vivo++v15++pro&store=tyy%2F4io&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=3a5ec0d4-8605-495e-8699-b486382b37b8.MOBFG8X7ZQHYHX28.SEARCH&ppt=None&ppn=None&ssid=dhetbn87u80000001672947280356&qH=ceafd25d67f98319",
+               "image": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/e/u/v/v15-pro-128-a-1818-vivo-8-original-imafg8xmb97wj6uj.jpeg?q=70",
+               "detials": {
+                    "productName": "vivo V15 Pro ",
+                    "specification": "(Topaz Blue, 128 GB)  (8 GB RAM)",
+                    "price": "₹34,990",
+                    "ratting": "4.5 out of 5 stars",
+                    "cust": "3,058 Ratings found...!",
+                    "offer": "",
+                    "emi": "Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500*",
+                    "deliveryChrage": "based on location",
+                    "replacement": "7 day seller replacement policy/brand assistance for device issues*?GST invoice available?",
+                    "spec": {
+                         "In The Box": "Handset, Earphone, User Manual, Micro-USB to USB Cable, USB Power Adapter, SIM Ejector Pin, Protective Case",
+                         "Model Number": "Vivo 1818",
+                         "Model Name": "V15 Pro",
+                         "Color": "Topaz Blue",
+                         "Browse Type": "Smartphones",
+                         "SIM Type": "Dual Sim",
+                         "Hybrid Sim Slot": "No",
+                         "Touchscreen": "Yes",
+                         "OTG Compatible": "Yes",
+                         "Quick Charging": "Yes",
+                         "SAR Value": "Head: 1.155, Body: 0.284",
+                         "Display Size": "16.23 cm (6.39 inch)",
+                         "Resolution": "2340 x 1080 pixels",
+                         "Resolution Type": "Full HD+",
+                         "GPU": "Adreno 612",
+                         "Display Type": "Super AMOLED",
+                         "Display Colors": "16M",
+                         "Other Display Features": "Bezel: 1.75mm (Side), 2.22mm (Top), 3.6mm (Bottom), Screen to Body Ratio: 91.64%, Ultra FullView Display",
+                         "Operating System": "Android Pie 9.0",
+                         "Processor Type": "Qualcomm Snapdragon 675AIE Octa Core 2.0GHz",
+                         "Processor Core": "Octa Core",
+                         "Primary Clock Speed": "2 GHz",
+                         "Operating Frequency": "2G GSM: B2/B3/B5/B8, 3G WCDMA: B1/B5/B8, 4G FDD LTE: B1/B3/B5/B8, 4G TDD LTE: B38/B40/B41",
+                         "Internal Storage": "128 GB",
+                         "RAM": "8 GB",
+                         "Expandable Storage": "256 GB",
+                         "Supported Memory Card Type": "microSD",
+                         "Memory Card Slot Type": "Dedicated Slot",
+                         "Call Log Memory": "Yes",
+                         "Primary Camera Available": "Yes",
+                         "Primary Camera": "48 Million Quad Pixel Sensor (12 Million Effective Pixel) + 8MP + 5MP, AI Triple Rear Camera",
+                         "Primary Camera Features": "AI Super Wide Angle, AI Body Shaping, Bokeh Mode, AI Face Beauty, Single Shot, Continously Shot, HDR, Professional Camera, Slow-Mode, Time-Lapse Photography, Panorama, PDAF, Live Photo, Gesture Photograph, Voice Photograph, 60 Frame Video, Portrait Light Effect, AR Sticker, Video Face Beauty, Ai Filter, Ai Scene Recognition, Ai Portrait Composition",
+                         "Secondary Camera Available": "Yes",
+                         "Secondary Camera": "32MP Front Camera",
+                         "Secondary Camera Features": "AI Face Beauty, AI Portrait Composition, Bokeh Mode, AI Body Shaping, Single Shot, Continuously Shot, HDR, Panorama, Live Photo, Gesture Photograph, Voice Photograph, Portrait Light Effect, AR Sticker, Video Face Beauty, Gender Detection",
+                         "Flash": "Rear LED Flash and Front Screen Flash",
+                         "HD Recording": "Yes",
+                         "Full HD Recording": "Yes",
+                         "Video Recording": "Yes",
+                         "Video Recording Resolution": "4K, 1080p, 720p",
+                         "Frame Rate": "120 fps",
+                         "Dual Camera Lens": "Primary Camera",
+                         "Phone Book": "Yes",
+                         "Network Type": "3G, 4G VOLTE, 4G, 2G",
+                         "Supported Networks": "GSM, WCDMA, 4G VoLTE, 4G LTE",
+                         "Internet Connectivity": "4G, 3G, Wi-Fi",
+                         "3G": "Yes",
+                         "Pre-installed Browser": "Vivo Browser, UC Browser, Google Chrome",
+                         "Micro USB Port": "Yes",
+                         "Bluetooth Support": "Yes",
+                         "Bluetooth Version": "5.0",
+                         "Wi-Fi": "Yes",
+                         "Wi-Fi Hotspot": "Yes",
+                         "USB Connectivity": "Yes",
+                         "Audio Jack": "3.5mm",
+                         "Map Support": "Google Maps",
+                         "GPS Support": "Yes",
+                         "Smartphone": "Yes",
+                         "Touchscreen Type": "Capacitive with Multi-touch",
+                         "SIM Size": "Nano SIM + Nano SIM",
+                         "User Interface": "Funtouch OS 9.0",
+                         "Removable Battery": "No",
+                         "SMS": "Yes",
+                         "Graphics PPI": "404 PPI",
+                         "SIM Access": "Dual Standby",
+                         "Sensors": "5th Generation In-display Fingerprint Sensor, Accelerometer, Ambient Light Sensor, Proximity Sensor, E-compass, Virtual Gyroscope",
+                         "Other Features": "AI Super Night Mode, Dual Engine, Wi-Fi Version: 2.4 GHz/5 GHz, Game Mode, Smart Split, Fast Charging, Motorbike Mode, Dual 4G, Eye Protection Mode, Face Unlock",
+                         "Important Apps": "Social Media Apps: Facebook, WhatsApp, Google Services: Play Store, Google, Gmail, YouTube, Google Drive, Google Play Music, Google Play Movies & TV, Google Duo, Google Photos, Google News, Others: NewsPoint, Amazon, Paytm, PhonePe, WPS Office, App Clone: WhatsApp, Facebook, WeChat, Instagram",
+                         "GPS Type": "GLONASS",
+                         "FM Radio": "Yes",
+                         "Audio Formats": "WAV, MP3, MP2, AMR-NB, AMR-WB, MIDI, Vorbis, APE, FLAC",
+                         "Video Formats": "MP4, 3GP, AVI",
+                         "Battery Capacity": "3700 mAh",
+                         "Width": "74.71 mm",
+                         "Height": "157.25 mm",
+                         "Depth": "8.21 mm",
+                         "Weight": "185 g",
+                         "Warranty Summary": "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+                    }
+               }
           },
           {
-               "name": "hp victus core i7 11th gen - (16 gb/512 gb ssd/windows 11 home/6 gb graphics/nvidia geforce rtx 3060) ...",
-               "link": "https://www.flipkart.com/hp-victus-core-i7-11th-gen-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3060-16-d0361tx-gaming-laptop/p/itm5927367b3400c?pid=COMGEVBG75QFGTCY&lid=LSTCOMGEVBG75QFGTCYEHDUEV&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGEVBG75QFGTCY.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
+               "id": 2,
+               "name": "vivo v15 pro (topaz blue, 128 gb)",
+               "link": "https://www.flipkart.com/vivo-v15-pro-topaz-blue-128-gb/p/itmfdhvqt5kdy2gx?pid=MOBFDHVQWZHAJTWX&lid=LSTMOBFDHVQWZHAJTWXKQT6XP&marketplace=FLIPKART&q=vivo++v15++pro&store=tyy%2F4io&srno=s_1_2&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=3a5ec0d4-8605-495e-8699-b486382b37b8.MOBFDHVQWZHAJTWX.SEARCH&ppt=None&ppn=None&ssid=dhetbn87u80000001672947280356&qH=ceafd25d67f98319",
+               "image": "https://rukminim1.flixcart.com/image/312/312/jrtj2q80/mobile/t/w/x/vivo-v15-pro-1818-pd1832f-ex-original-imafdj59tvmuffyg.jpeg?q=70",
+               "detials": {
+                    "productName": "vivo V15 Pro ",
+                    "specification": "(Topaz Blue, 128 GB)  (6 GB RAM)",
+                    "price": "₹32,990",
+                    "ratting": "4.5 out of 5 stars",
+                    "cust": "31,222 Ratings found...!",
+                    "offer": "",
+                    "emi": "Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500*",
+                    "deliveryChrage": "based on location",
+                    "replacement": "7 day seller replacement policy/brand assistance for device issues*?GST invoice available?",
+                    "spec": {
+                         "In The Box": "Handset, Earphone, User Manual, Micro-USB to USB Cable, USB Power Adapter, SIM Ejector Pin, Protective Case",
+                         "Model Number": "Vivo 1818/PD1832F_EX",
+                         "Model Name": "V15 Pro",
+                         "Color": "Topaz Blue",
+                         "Browse Type": "Smartphones",
+                         "SIM Type": "Dual Sim",
+                         "Hybrid Sim Slot": "No",
+                         "Touchscreen": "Yes",
+                         "OTG Compatible": "Yes",
+                         "Quick Charging": "Yes",
+                         "SAR Value": "Head: 1.155, Body: 0.284",
+                         "Display Size": "16.23 cm (6.39 inch)",
+                         "Resolution": "2340 x 1080 pixels",
+                         "Resolution Type": "Full HD+",
+                         "GPU": "Adreno 612",
+                         "Display Type": "Super AMOLED",
+                         "Display Colors": "16M",
+                         "Other Display Features": "Bezel: 1.75mm (Side), 2.22mm (Top), 3.6mm (Bottom), Screen to Body Ratio: 91.64%, Ultra FullView Display",
+                         "Operating System": "Android Pie 9.0",
+                         "Processor Type": "Qualcomm Snapdragon 675AIE Octa Core 2.0GHz",
+                         "Processor Core": "Octa Core",
+                         "Primary Clock Speed": "2 GHz",
+                         "Operating Frequency": "2G GSM: B2/B3/B5/B8, 3G WCDMA: B1/B5/B8, 4G FDD LTE: B1/B3/B5/B8, 4G TDD LTE: B38/B40/B41",
+                         "Internal Storage": "128 GB",
+                         "RAM": "6 GB",
+                         "Expandable Storage": "256 GB",
+                         "Supported Memory Card Type": "microSD",
+                         "Memory Card Slot Type": "Dedicated Slot",
+                         "Call Log Memory": "Yes",
+                         "Primary Camera Available": "Yes",
+                         "Primary Camera": "48MP + 5MP + 8MP",
+                         "Primary Camera Features": "Ai Super Wide Angle, Ai Body Shaping, Bokeh Mode, Ai Face Beauty, Single Shot, Continously Shot, HDR, Professional Camera, Slow-Mode, Time-Lapse Photography, Panorama, PDAF, Live Photo, Gesture Photograph, Voice Photograph, 60 Frame Video, Portrait Light Effect, AR Sticker, Video Face Beauty, Ai Filter, Ai Scene Recognition, Ai Portrait Composition",
+                         "Secondary Camera Available": "Yes",
+                         "Secondary Camera": "32MP Front Camera",
+                         "Secondary Camera Features": "Ai Face Beauty, Ai Portrait Composition, Bokeh Mode, Ai Body Shaping, Single Shot, Continously Shot, HDR, Panorama, Live Photo, Gesture Photograph, Voice Photograph, Portrait Light Effect, AR Sticker, Video Face Beauty, Gender Detection",
+                         "Flash": "Rear LED Flash and Front Screen Flash",
+                         "HD Recording": "Yes",
+                         "Full HD Recording": "Yes",
+                         "Video Recording": "Yes",
+                         "Video Recording Resolution": "4K, 1080p, 720p",
+                         "Frame Rate": "120 fps",
+                         "Dual Camera Lens": "Primary Camera",
+                         "Phone Book": "Yes",
+                         "Network Type": "3G, 4G VOLTE, 4G, 2G",
+                         "Supported Networks": "GSM, WCDMA, 4G VoLTE, 4G LTE",
+                         "Internet Connectivity": "4G, 3G, Wi-Fi",
+                         "3G": "Yes",
+                         "Pre-installed Browser": "Vivo Browser, UC Browser, Google Chrome",
+                         "Micro USB Port": "Yes",
+                         "Bluetooth Support": "Yes",
+                         "Bluetooth Version": "5.0",
+                         "Wi-Fi": "Yes",
+                         "Wi-Fi Hotspot": "Yes",
+                         "USB Connectivity": "Yes",
+                         "Audio Jack": "3.5mm",
+                         "Map Support": "Google Maps",
+                         "GPS Support": "Yes",
+                         "Smartphone": "Yes",
+                         "Touchscreen Type": "Capacitive with Multi-touch",
+                         "SIM Size": "Nano SIM + Nano SIM",
+                         "User Interface": "Funtouch OS 9.0",
+                         "Removable Battery": "No",
+                         "SMS": "Yes",
+                         "Graphics PPI": "404 PPI",
+                         "SIM Access": "Dual Standby",
+                         "Sensors": "5th Generation In-display Fingerprint Sensor, Accelerometer, Ambient Light Sensor, Proximity Sensor, E-compass, Virtual Gyroscope",
+                         "Other Features": "AI Super Night Mode, Dual Engine, Wi-Fi Version: 2.4 GHz/5 GHz, Game Mode, Smart Split, Fast Charging, Motorbike Mode, Dual 4G, Eye Protection Mode, Face Unlock",
+                         "Important Apps": "Social Media Apps: Facebook, WhatsApp, Google Services: Play Store, Google, Gmail, YouTube, Google Drive, Google Play Music, Google Play Movies & TV, Google Duo, Google Photos, Google News, Others: NewsPoint, Amazon, Paytm, PhonePe, WPS Office, App Clone: WhatsApp, Facebook, WeChat, Instagram",
+                         "GPS Type": "GLONASS",
+                         "FM Radio": "Yes",
+                         "Audio Formats": "WAV, MP3, MP2, AMR-NB, AMR-WB, MIDI, Vorbis, APE, FLAC",
+                         "Video Formats": "MP4, 3GP, AVI",
+                         "Battery Capacity": "3700 mAh",
+                         "Width": "74.71 mm",
+                         "Height": "157.25 mm",
+                         "Depth": "8.21 mm",
+                         "Weight": "185 g",
+                         "Warranty Summary": "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+                    }
+               }
           },
           {
-               "name": "hp core i5 11th gen - (8 gb/512 gb ssd/windows 10 home/4 gb graphics) victus 16-d0003tx laptop",
-               "link": "https://www.flipkart.com/hp-core-i5-11th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-victus-16-d0003tx-laptop/p/itmaf4dbeedbe629?pid=COMGBTHGH6N8V9EE&lid=LSTCOMGBTHGH6N8V9EEGAOT2L&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_4&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGBTHGH6N8V9EE.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i7 12th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050/14...",
-               "link": "https://www.flipkart.com/hp-victus-core-i7-12th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-144-hz-15-fa0073tx-gaming-laptop/p/itm9010e2ab6b562?pid=COMGGKKZX7FC7GHU&lid=LSTCOMGGKKZX7FC7GHUX9YXDZ&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGKKZX7FC7GHU.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 5800h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/amd radeon rx 5500m...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-5800h-8-gb-512-gb-ssd-windows-11-home-4-graphics-amd-radeon-rx-5500m-16-e0550ax-gaming-laptop/p/itmacbda2f62b26b?pid=COMGGZGH6MUVCHVZ&lid=LSTCOMGGZGH6MUVCHVZXJHCRO&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGZGH6MUVCHVZ.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fb0050ax-gaming-laptop/p/itm5de096d7b3159?pid=COMGGYEBRKPEHQKF&lid=LSTCOMGGYEBRKPEHQKFGHGYUV&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_7&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBRKPEHQKF.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 6600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-6600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-16-e1062ax-gaming-laptop/p/itmec93369d20411?pid=COMGFA5FCNKUTPHG&lid=LSTCOMGFA5FCNKUTPHGML6EN0&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGFA5FCNKUTPHG.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce gtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-gtx-1650-15-fb0040ax-gaming-laptop/p/itmff916c422db8f?pid=COMGGYEBBQFFPTTN&lid=LSTCOMGGYEBBQFFPTTNWCQ40K&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_9&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBBQFFPTTN.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-ti-15-fb0051ax-gaming-laptop/p/itmc4f9ff03cfce3?pid=COMGGYEBMHTFBDJA&lid=LSTCOMGGYEBMHTFBDJAZFAHA4&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_10&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBMHTFBDJA.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-16-e0350ax-gaming-laptop/p/itm74bd1219297b0?pid=COMGDJPHYQYGEFHN&lid=LSTCOMGDJPHYQYGEFHNPE2K55&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_11&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGDJPHYQYGEFHN.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 5800h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-5800h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fb0052ax-gaming-laptop/p/itm89d20e349012d?pid=COMGGYEBWVKYPSHG&lid=LSTCOMGGYEBWVKYPSHGSZ8DE8&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_12&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBWVKYPSHG.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i7 12th gen - (16 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050) ...",
-               "link": "https://www.flipkart.com/hp-victus-core-i7-12th-gen-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fa0353tx-gaming-laptop/p/itm7a2e63b6cdeb0?pid=COMGGYEB3NDP2ZFC&lid=LSTCOMGGYEB3NDP2ZFCKYEQMH&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_13&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEB3NDP2ZFC.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce gtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-gtx-1650-16-e0301ax-gaming-laptop/p/itm5b9918b9fda35?pid=COMGDJPHHZXYG8NU&lid=LSTCOMGDJPHHZXYG8NULWP6D5&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_14&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGDJPHHZXYG8NU.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 5 hexa core 5600h - (8 gb/512 gb ssd/windows 10 home/4 gb graphics/amd radeon rx 5500m...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-5-hexa-core-5600h-8-gb-512-gb-ssd-windows-10-home-4-graphics-amd-radeon-rx-5500m-16-e0162ax-gaming-laptop/p/itmd3b5430e99cf4?pid=COMG9FSFFSX3S8RV&lid=LSTCOMG9FSFFSX3S8RVSYQT2R&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_15&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMG9FSFFSX3S8RV.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 5800h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-5800h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-144-hz-16-e0305ax-gaming-laptop/p/itm2c4a679cc89c6?pid=COMGF9UFFAPAPQ6G&lid=LSTCOMGF9UFFAPAPQ6GZ5KJS0&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_16&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGF9UFFAPAPQ6G.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i5 12th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce gtx 1650/14...",
-               "link": "https://www.flipkart.com/hp-victus-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-gtx-1650-144-hz-15-fa0070tx-gaming-laptop/p/itm7faab3efcce20?pid=COMGGKKZHDJBZXJX&lid=LSTCOMGGKKZHDJBZXJXVISMOP&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_17&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGKKZHDJBZXJX.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i7 12th gen - (16 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050ti...",
-               "link": "https://www.flipkart.com/hp-victus-core-i7-12th-gen-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050ti-15-fa0354tx-gaming-laptop/p/itm50c2572c1fc33?pid=COMGGYEB8F8NP6ZX&lid=LSTCOMGGYEB8F8NP6ZXHR1CRX&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_18&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEB8F8NP6ZX.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i5 12th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050) 1...",
-               "link": "https://www.flipkart.com/hp-victus-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fa0350tx-gaming-laptop/p/itm162df72a1caa0?pid=COMGGYEBVFGR2KZZ&lid=LSTCOMGGYEBVFGR2KZZEMVQKE&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_19&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBVFGR2KZZ.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 5800h - (16 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-5800h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fb0053ax-gaming-laptop/p/itm844224a44bf25?pid=COMGGYEBNC6XDG4W&lid=LSTCOMGGYEBNC6XDG4WG0FIT3&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_20&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBNC6XDG4W.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 6800h - (16 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-6800h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-ti-16-e1060ax-gaming-laptop/p/itm1341a63f64783?pid=COMGFA5FWMCQBXB3&lid=LSTCOMGFA5FWMCQBXB3W6YTUF&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_21&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGFA5FWMCQBXB3.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus ryzen 7 octa core 6800h - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx ...",
-               "link": "https://www.flipkart.com/hp-victus-ryzen-7-octa-core-6800h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-ti-16-e1061ax-gaming-laptop/p/itmb8c8c60ccaefc?pid=COMGFA5FM8PFF3HC&lid=LSTCOMGFA5FM8PFF3HCU9KZEC&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_22&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGFA5FM8PFF3HC.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i7 12th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce rtx 3050) 1...",
-               "link": "https://www.flipkart.com/hp-victus-core-i7-12th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fa0351tx-gaming-laptop/p/itm27f97c0b078ee?pid=COMGGYEBKK5K4UFG&lid=LSTCOMGGYEBKK5K4UFGGJLEAZ&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_23&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBKK5K4UFG.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
-          },
-          {
-               "name": "hp victus core i5 12th gen - (8 gb/512 gb ssd/windows 11 home/4 gb graphics/nvidia geforce gtx 1650) 1...",
-               "link": "https://www.flipkart.com/hp-victus-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-gtx-1650-15-fa0165tx-gaming-laptop/p/itm6598f02f290f3?pid=COMGGYEBXHZCJXGE&lid=LSTCOMGGYEBXHZCJXGEQL4IRB&marketplace=FLIPKART&q=hp++victus&store=6bo%2Fb5g&srno=s_1_24&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=c6058e0d-3b16-4ec0-be12-b673dc01354e.COMGGYEBXHZCJXGE.SEARCH&ppt=None&ppn=None&ssid=iqo5j1n54g0000001668831713070&qH=8408dc8e1b47275d"
+               "id": 3,
+               "name": "vivo v15 pro (ruby red, 128 gb)",
+               "link": "https://www.flipkart.com/vivo-v15-pro-ruby-red-128-gb/p/itmffmh3damhbuga?pid=MOBFDHVQXCDJFDHN&lid=LSTMOBFDHVQXCDJFDHNF0DHHQ&marketplace=FLIPKART&q=vivo++v15++pro&store=tyy%2F4io&srno=s_1_3&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&fm=organic&iid=3a5ec0d4-8605-495e-8699-b486382b37b8.MOBFDHVQXCDJFDHN.SEARCH&ppt=None&ppn=None&ssid=dhetbn87u80000001672947280356&qH=ceafd25d67f98319",
+               "image": "https://rukminim1.flixcart.com/image/312/312/jrtj2q80/mobile/d/h/n/vivo-v15-pro-1818-pd1832f-ex-original-imafdj59mpmx89gf.jpeg?q=70",
+               "detials": {
+                    "productName": "vivo V15 Pro ",
+                    "specification": "(Ruby Red, 128 GB)  (6 GB RAM)",
+                    "price": "₹32,990",
+                    "ratting": "4.5 out of 5 stars",
+                    "cust": "31,222 Ratings found...!",
+                    "offer": "",
+                    "emi": "Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500*",
+                    "deliveryChrage": "based on location",
+                    "replacement": "7 day seller replacement policy/brand assistance for device issues*?GST invoice available?",
+                    "spec": {
+                         "In The Box": "Handset, Earphone, User Manual, Micro-USB to USB Cable, USB Power Adapter, SIM Ejector Pin, Protective Case",
+                         "Model Number": "Vivo 1818",
+                         "Model Name": "V15 Pro",
+                         "Color": "Ruby Red",
+                         "Browse Type": "Smartphones",
+                         "SIM Type": "Dual Sim",
+                         "Hybrid Sim Slot": "No",
+                         "Touchscreen": "Yes",
+                         "OTG Compatible": "Yes",
+                         "Quick Charging": "Yes",
+                         "SAR Value": "Head: 1.155, Body: 0.284",
+                         "Display Size": "16.23 cm (6.39 inch)",
+                         "Resolution": "2340 x 1080 pixels",
+                         "Resolution Type": "Full HD+",
+                         "GPU": "Adreno 612",
+                         "Display Type": "Super AMOLED",
+                         "Display Colors": "16M",
+                         "Other Display Features": "Bezel: 1.75mm (Side), 2.22mm (Top), 3.6mm (Bottom), Screen to Body Ratio: 91.64%, Ultra FullView Display",
+                         "Operating System": "Android Pie 9.0",
+                         "Processor Type": "Qualcomm Snapdragon 675AIE Octa Core 2.0GHz",
+                         "Processor Core": "Octa Core",
+                         "Primary Clock Speed": "2 GHz",
+                         "Operating Frequency": "2G GSM: B2/B3/B5/B8, 3G WCDMA: B1/B5/B8, 4G FDD LTE: B1/B3/B5/B8, 4G TDD LTE: B38/B40/B41",
+                         "Internal Storage": "128 GB",
+                         "RAM": "6 GB",
+                         "Expandable Storage": "256 GB",
+                         "Supported Memory Card Type": "microSD",
+                         "Memory Card Slot Type": "Dedicated Slot",
+                         "Call Log Memory": "Yes",
+                         "Primary Camera Available": "Yes",
+                         "Primary Camera": "48 Million Quad Pixel Sensor (12 Million Effective Pixel) + 8MP + 5MP, AI Triple Rear Camera",
+                         "Primary Camera Features": "Ai Super Wide Angle, Ai Body Shaping, Bokeh Mode, Ai Face Beauty, Single Shot, Continously Shot, HDR, Professional Camera, Slow-Mode, Time-Lapse Photography, Panorama, PDAF, Live Photo, Gesture Photograph, Voice Photograph, 60 Frame Video, Portrait Light Effect, AR Sticker, Video Face Beauty, Ai Filter, Ai Scene Recognition, Ai Portrait Composition",
+                         "Secondary Camera Available": "Yes",
+                         "Secondary Camera": "32MP Front Camera",
+                         "Secondary Camera Features": "Ai Face Beauty, Ai Portrait Composition, Bokeh Mode, Ai Body Shaping, Single Shot, Continously Shot, HDR, Panorama, Live Photo, Gesture Photograph, Voice Photograph, Portrait Light Effect, AR Sticker, Video Face Beauty, Gender Detection",
+                         "Flash": "Rear LED Flash and Front Screen Flash",
+                         "HD Recording": "Yes",
+                         "Full HD Recording": "Yes",
+                         "Video Recording": "Yes",
+                         "Video Recording Resolution": "4K, 1080p, 720p",
+                         "Frame Rate": "120 fps",
+                         "Dual Camera Lens": "Primary Camera",
+                         "Phone Book": "Yes",
+                         "Network Type": "3G, 4G VOLTE, 4G, 2G",
+                         "Supported Networks": "GSM, WCDMA, 4G VoLTE, 4G LTE",
+                         "Internet Connectivity": "4G, 3G, Wi-Fi",
+                         "3G": "Yes",
+                         "Pre-installed Browser": "Vivo Browser, UC Browser, Google Chrome",
+                         "Micro USB Port": "Yes",
+                         "Bluetooth Support": "Yes",
+                         "Bluetooth Version": "5.0",
+                         "Wi-Fi": "Yes",
+                         "Wi-Fi Hotspot": "Yes",
+                         "USB Connectivity": "Yes",
+                         "Audio Jack": "3.5mm",
+                         "Map Support": "Google Maps",
+                         "GPS Support": "Yes",
+                         "Smartphone": "Yes",
+                         "Touchscreen Type": "Capacitive with Multi-touch",
+                         "SIM Size": "Nano SIM + Nano SIM",
+                         "User Interface": "Funtouch OS 9.0",
+                         "Removable Battery": "No",
+                         "SMS": "Yes",
+                         "Graphics PPI": "404 PPI",
+                         "SIM Access": "Dual Standby",
+                         "Sensors": "5th Generation In-display Fingerprint Sensor, Accelerometer, Ambient Light Sensor, Proximity Sensor, E-compass, Virtual Gyroscope",
+                         "Other Features": "AI Super Night Mode, Dual Engine, Wi-Fi Version: 2.4 GHz/5 GHz, Game Mode, Smart Split, Fast Charging, Motorbike Mode, Dual 4G, Eye Protection Mode, Face Unlock",
+                         "Important Apps": "Social Media Apps: Facebook, WhatsApp, Google Services: Play Store, Google, Gmail, YouTube, Google Drive, Google Play Music, Google Play Movies & TV, Google Duo, Google Photos, Google News, Others: NewsPoint, Amazon, Paytm, PhonePe, WPS Office, App Clone: WhatsApp, Facebook, WeChat, Instagram",
+                         "GPS Type": "GLONASS",
+                         "FM Radio": "Yes",
+                         "Audio Formats": "WAV, MP3, MP2, AMR-NB, AMR-WB, MIDI, Vorbis, APE, FLAC",
+                         "Video Formats": "MP4, 3GP, AVI",
+                         "Battery Capacity": "3700 mAh",
+                         "Width": "74.71 mm",
+                         "Height": "157.25 mm",
+                         "Depth": "8.21 mm",
+                         "Weight": "185 g",
+                         "Warranty Summary": "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+                    }
+               }
           }
      ]
 }

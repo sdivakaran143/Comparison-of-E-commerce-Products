@@ -1,66 +1,69 @@
 import logo from './logo.svg';
 import './App.css';
-import amzdata,{amazon} from "./database.json";
-import flipdata,{flipkart} from "./database.json";
+import React from 'react';
+import {Amazoncard} from "./cards"
+import {Flipkartcards} from "./cards"
 
-
-export default function App() {
-  return (
-          <div classname="main">
-
-            <div classname="amazonbox">
-            <h1><b>amazon</b></h1>
-            {amzdata.amazon.map(x => {
-                return( 
-                  <div key={x.id}>
-                  <img src={x.image} alt={x.image}/><br/>
-                  <a href={x.link}>{x.name}</a><br/>
-                  </div>
-                )
-              })}
+function App() {
+      return (
+        <div className="main">
+        {/* <div className="cards">
+          <Amazoncard/>
         </div>
-          <div classname="flipkartbox">
-          <h1><b>flipkart</b></h1>
-                  {flipdata.flipkart.map(y => {
-                      return( 
-                        <div key={y.id}>
-                        <img src={y.image} alt={y.name}/><br/>
-                        <a href={y.link}>{y.name}</a><br/>
-                        </div>
-                      )
-                    })}
+        
+      <div className="flipkartbox">
+      <div className="cards">
+        <Flipkartcards/>
+      </div>
+      </div> */}
+       <div className="nav">
+      <nav>
+        <h2>Title</h2>
+
+        <div className="nav-li">
+          <a>hello</a>
+          <a>hxd</a>
+          <a>cxxcv</a>
+          <a>gxcgnf</a>
+        </div>
+      </nav>
+
+      <div className="searchDiv">
+        <form action="/searchData" method="post">
+          <input type="text" placeholder="Product Name" />
+          <button>Search</button>
+        </form>
+        
+      </div>
+    </div>
+    <div className="body-content">
+      <div className="content-element">
+        <div className="amazon-content">
+          <div className="amazon-title">
+            <h2>Amazon</h2>
           </div>
+
+          <div className="card_cont">
+            <Amazoncard/>
+          </div>
+        </div>
+        <div className="flipkart-content">
+          <div className="flipkart-title">
+            <h2>Flipkart</h2>
+          </div>
+
+          <div className="card_cont">
+          <Flipkartcards/>
+          </div>
+        </div>
       </div>
 
-    // <div className="App">
-    //   <div class="amazonbox"><h1><b>Amazon</b></h1>
-    //   <div>
-    //   {amzdata.amazon.map(x => {
-    //     return( 
-    //       <div key={x.id}>
-            
-    //       <li><a href={x.link}>{x.name}</a></li>
-    //   </div>
-    //     )
-    //   })
-    //   }
-    //   </div>
-    //   </div>
-    //   <div class="flikartbox">
-    //       <h1><b>Flipkart</b></h1>
-    //         <div>
-    //             {flipdata.flipkart.map(y => {
-    //               return( 
-    //                 <div key={y.id}>
-                      
-    //                 <li><a href={y.link}>{y.name}</a></li>
-    //                 </div>
-    //               )
-    //             })}
-    //         </div>
-    //   </div>
-    // </div>
+      <div className="btn-compare">
+        <button className="compare-btn" type="submit">COMPARE</button>
+      </div>
+    </div>
+    </div>
   );
 }
 
-
+export default App;
