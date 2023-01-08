@@ -42,7 +42,8 @@ function initamazon(producturl) {
     return new Promise((res, re) => {
         req({url: producturl, gzip: true},(error,response,html)=> {
             // console.log(producturl);
-            console.log("Ast");
+            if(!error){
+                console.log("Ast");
             const $=cherio.load(html);
             product=$("#productTitle").text().trim();
             spec=(product.substring(product.indexOf("(")));
@@ -126,6 +127,7 @@ function initamazon(producturl) {
                 ,spec:specobj
             }
             // console.log(val);
+            }
             res()
         })
 })
@@ -162,8 +164,8 @@ function initflipkart(producturl){
             if(!error){
                 const $=cherio.load(html);
                 var string=$(".B_NuCI").text().trim();
-
-                var productName=(string.substring(0,string.indexOf("(")));
+                var indexbracket=string.indexOf('(')-1;
+                var productName=(string.substring(0,indexbracket));
                 var spec=(string.substring(string.indexOf("(")));
                 var price =($("._16Jk6d").text());
                 var ratting=($('._3LWZlK').text().substring(0,3)+" out of 5 stars");

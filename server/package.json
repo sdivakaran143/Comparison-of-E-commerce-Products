@@ -23,6 +23,7 @@
     "content-type": "^1.0.4",
     "cookie": "^0.5.0",
     "cookie-signature": "^1.0.6",
+    "cors": "^2.8.5",
     "css-select": "^5.1.0",
     "css-what": "^6.1.0",
     "debug": "^2.6.9",

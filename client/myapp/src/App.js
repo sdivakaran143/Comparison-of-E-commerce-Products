@@ -1,12 +1,40 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Amazoncard} from "./cards"
 import {Flipkartcards} from "./cards"
 // import css from "./App.module.css"
-
+import axios from "axios";
 function App() {
+  const[name,setname]=useState("")
+  const[home,setHome]=useState("")
+
+  useEffect(()=>{
+    axios.get("http://localhost:2023/home").then(function(response){
+      setHome(response.data)
+    })
+  },[])
+
+
+
+  async function postproductname(e){
+    e.preventDefault();
+
+    try{
+      await axios.post("http://localhost:2023/postproductname",{
+        name
+      })
+
+    }catch(error){
+      console.log(error);
+    }
+  }
+
+
       return (
         <div className="main">
+          
+
+
         {/* <div className="cards">
           <Amazoncard/>
         </div>
@@ -15,10 +43,13 @@ function App() {
       <div className="cards">
         <Flipkartcards/>
       </div>
-      </div> */}
+    </div> */}
+
+
        <div className="nav">
       <nav>
         <h2>Title</h2>
+    {home}
 
         <div className="nav-li">
           <a>hello</a>
@@ -29,9 +60,9 @@ function App() {
       </nav>
 
       <div className="searchDiv">
-        <form action="/searchData" method="post">
-          <input type="text" placeholder="Product Name" />
-          <button>Search</button>
+        <form onSubmit={postproductname}>
+        <input type="text" value={name} onChange={(e)=>setname(e.target.value)}></input>
+        <button type='submit'>submit</button>
         </form>
         
       </div>
@@ -62,7 +93,7 @@ function App() {
         <button className="compare-btn" type="submit">COMPARE</button>
       </div>
     </div>
-    </div>
+    </div> 
   );
 }
 

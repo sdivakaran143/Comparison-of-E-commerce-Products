@@ -41,16 +41,26 @@ req(FlipkartLink,(error,response,html)=>{
     if(!error){
         const $=cherio.load(html);
         requirements=(($("._10Ermr").children('span').text()).toLowerCase().trim()).split(" ");
-        // console.log(requirements);
         $('._1AtVbE').each((i, val) => {
+            let listname,listLink,image;
             if ($('div').hasClass('_2WkVRV')) {
-                storefilpkart(($(val).find('.IRpwTa').text()).toLowerCase(),$(val).find('.IRpwTa').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
+                listname=($(val).find('.IRpwTa').text()).toLowerCase();
+                listLink=$(val).find('.IRpwTa').attr('href')
+                image=$(val).find('._396cs4').attr('src')
             } else if ($('div').hasClass('_4rR01T')) {
-                storefilpkart(($(val).find('._4rR01T').text()).toLowerCase(),$(val).find('._1fQZEK').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
+                listname=($(val).find('._4rR01T').text()).toLowerCase()
+                listLink=$(val).find('._1fQZEK').attr('href')
+                image=$(val).find('._396cs4').attr('src')
             }
             else if ($('a').hasClass('s1Q9rs')) {
-                storefilpkart(($(val).find('.s1Q9rs').text()).toLowerCase(),$(val).find('.s1Q9rs').attr('href'),$(val).find('._396cs4').attr('src'),requirements);
+                listname=($(val).find('.s1Q9rs').text()).toLowerCase()
+                listLink=$(val).find('.s1Q9rs').attr('href')
+                image=$(val).find('._396cs4').attr('src')
             } else { console.log("Not Found") }
+            if(image==undefined){
+                image=$(val).find('._2r_T1I').attr('src')
+            }
+            storefilpkart(listname,listLink,image,requirements)
         })
     }
     storeinjson();
@@ -61,6 +71,7 @@ req(FlipkartLink,(error,response,html)=>{
 
 
 function findtheproductinamazon(AmazonLink,requirements){
+    console.log("amz");
     req({url: AmazonLink, gzip: true}, (error,response,html) => {
         // req(AmazonLink,(error,response,html)=>{
             console.log("amzon  "+z++);
@@ -76,6 +87,7 @@ function findtheproductinamazon(AmazonLink,requirements){
                 $(".s-card-container").each((i,val)=>{
                     const listname=$(val).find(".a-text-normal").text().toLowerCase();
                 for(let i=0;i<requirements.length;i++){
+                    // console.log(listname);
                     if(!(($(val).find('.a-color-secondary').text())=="Sponsored")){
                         if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
                             break;
@@ -113,6 +125,8 @@ function findtheproductinamazon(AmazonLink,requirements){
                 // }
                 // findtheproductinflipkart(FlipkartLink,requirements)
                 storeinjson();
+            }else{
+                console.log("server is unreachable...");
             }
         })
         
@@ -126,16 +140,8 @@ function findtheproductinamazon(AmazonLink,requirements){
         // hp victus
     
     
-    let Name ="hp pavilion".toLowerCase().trim();
-    
-    let fliplink=Name.replaceAll(" ","%20%20");
-    let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
-    requirements=Name.split(" ");
-    
-    let amlink=Name.replaceAll(" ","+");
-    let AmazonLink="https://www.amazon.in/s?k="+amlink
-    
-    //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
+        
+        //class="s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16"
     ///html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[3]
     ////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]
     ///html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[5]
@@ -150,16 +156,23 @@ async function storeinjson() {
     // fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(json,null,5));
     fs.writeFile('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(json,10000,5), err => {
             if (err) throw err;
-                console.log('data written successfully on db.json...');
+            console.log('data written successfully on db.json...');
         });
     }
+    
+    
 
     module.exports = {
-        make_API_call : function(){
-            return new Promise((resolve, reject) => {
-                findtheproductinamazon(AmazonLink,requirements)
-                findtheproductinflipkart(FlipkartLink,requirements)   
-                resolve();
-            })
+        make_API_call : function(productname){
+            let Name =productname.toLowerCase().trim();
+    
+            let fliplink=Name.replaceAll(" ","%20%20");
+            let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
+            requirements=Name.split(" ");
+            findtheproductinflipkart(FlipkartLink,requirements)   
+            
+            let amlink=Name.replaceAll(" ","+");
+            let AmazonLink="https://www.amazon.in/s?k="+amlink
+            findtheproductinamazon(AmazonLink,requirements)
         }
     }
