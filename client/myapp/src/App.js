@@ -1,8 +1,8 @@
-// import './App.css';
+import './App.css';
 import React from 'react';
 import {Amazoncard} from "./cards"
 import {Flipkartcards} from "./cards"
-import css from "./App.module.css"
+// import css from "./App.module.css"
 
 function App() {
       return (
@@ -16,7 +16,7 @@ function App() {
         <Flipkartcards/>
       </div>
       </div> */}
-       <div className="css.nav">
+       <div className="nav">
       <nav>
         <h2>Title</h2>
 

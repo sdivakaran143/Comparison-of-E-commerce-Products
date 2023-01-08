@@ -1,7 +1,5 @@
 const req =require("request"),cherio=require('cheerio'),axios=require("axios"),fs=require('fs'),findmainpage=require("./productpage");
 
-const express = require('express')
-const app = express()
 
 // let FlipkartObj={};
 // let AmazonObj={};
@@ -14,7 +12,6 @@ let flip=0;
 
 function storefilpkart(listname,listLink,image,requirements){
     // console.log("flipc   "+z++);
-
     for(let i=0;i<requirements.length;i++){
             if(!listname.includes(requirements[i])&&!requirements[i].includes("and")){
                 break;
@@ -37,8 +34,6 @@ function storefilpkart(listname,listLink,image,requirements){
             
         }
 }
-
-
 function findtheproductinflipkart(FlipkartLink,requirements){
     console.log("flip  "+z++);
 
@@ -91,8 +86,8 @@ function findtheproductinamazon(AmazonLink,requirements){
                                 n=listname.length;
                             }
                             // AmazonObj[(listname).substring(0,n)]="https://www.amazon.in/"+$(val).find('.a-link-normal').attr('href');
-                            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-text-normal').attr('href')),amz);
                             // findmainpage.Amazondetials("https://www.amazon.in//HP-16-1-inch-Micro-Edge-Anti-Glare-16-C0136Ax/dp/B09SPZY67Q/ref=sr_1_3?keywords=hp+omen&qid=1672555776&sr=8-3")
+                            findmainpage.Amazondetials(("https://www.amazon.in/"+$(val).find('.a-text-normal').attr('href')),amz);
                             amazonproducts.push({
                                 id:++amz,
                                 name:(listname).substring(0,n),
@@ -158,18 +153,13 @@ async function storeinjson() {
                 console.log('data written successfully on db.json...');
         });
     }
-    
 
-    // module.exports = {
-    //     make_API_call : function(){
-    //         findtheproductinamazon(AmazonLink,requirements)
-    //         findtheproductinflipkart(FlipkartLink,requirements);
-    //     }
-    // }
-
-    app.get('/getAPIResponse',(req, res) => {
-        findtheproductinamazon(AmazonLink,requirements)
-        findtheproductinflipkart(FlipkartLink,requirements);
-    })
-
-    app.listen(8989, () => console.log(`App listening on port !`))
+    module.exports = {
+        make_API_call : function(){
+            return new Promise((resolve, reject) => {
+                findtheproductinamazon(AmazonLink,requirements)
+                findtheproductinflipkart(FlipkartLink,requirements)   
+                resolve();
+            })
+        }
+    }
