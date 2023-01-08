@@ -1,12 +1,10 @@
 const req =require("request"),cherio=require('cheerio'),axios=require("axios"),fs=require('fs'),findmainpage=require("./productpage");
 
 const express = require('express')
-const api_helper = require('./ProductList');
-const { json } = require("body-parser");
 const app = express()
 
-let FlipkartObj={};
-let AmazonObj={};
+// let FlipkartObj={};
+// let AmazonObj={};
 
 let flipkartproducts=[];
 let amazonproducts=[];
@@ -60,8 +58,7 @@ req(FlipkartLink,(error,response,html)=>{
             } else { console.log("Not Found") }
         })
     }
-    // storeinjson();
-    updateflipkartJson();
+    storeinjson();
     // console.log(objflipkart)
     // console.log(Object.keys(FlipkartObj));
 });
@@ -120,8 +117,7 @@ function findtheproductinamazon(AmazonLink,requirements){
                 //     console.log("Amazon link  : https://www.amazon.in/dp/"+link)
                 // }
                 // findtheproductinflipkart(FlipkartLink,requirements)
-                // storeinjson();
-                updateAmazonJson();
+                storeinjson();
             }
         })
         
@@ -135,7 +131,7 @@ function findtheproductinamazon(AmazonLink,requirements){
         // hp victus
     
     
-    let Name ="assus vivobook pro 14x".toLowerCase().trim();
+    let Name ="hp pavilion".toLowerCase().trim();
     
     let fliplink=Name.replaceAll(" ","%20%20");
     let FlipkartLink="https://www.flipkart.com/search?q="+fliplink+"&otracker=AS_Query_HistoryAutoSuggest_5_0&otracker1=AS_Query_HistoryAutoSuggest_5_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=5&as-type=HISTORY";
@@ -163,19 +159,6 @@ async function storeinjson() {
         });
     }
     
-function updateAmazonJson(id){
-        const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
-        const databases = JSON.parse(data)
-        databases.amazon=amazonproducts;
-        fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
-    }
-    function updateflipkartJson(id){
-        const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
-        const databases = JSON.parse(data)
-        databases.flipkart=flipkartproducts;
-        fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
-    }
-
 
     // module.exports = {
     //     make_API_call : function(){
