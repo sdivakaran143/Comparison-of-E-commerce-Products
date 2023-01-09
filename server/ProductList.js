@@ -1,6 +1,4 @@
 const req =require("request"),cherio=require('cheerio'),axios=require("axios"),fs=require('fs'),findmainpage=require("./productpage");
-
-
 // let FlipkartObj={};
 // let AmazonObj={};
 
@@ -27,7 +25,9 @@ function storefilpkart(listname,listLink,image,requirements){
                     name:listname,
                     link:("https://www.flipkart.com"+listLink),
                     image:image,
-                    detials:{}
+                    detials:{
+                        "site":"flipkart"
+                    }
                 });
   
             }
@@ -105,7 +105,9 @@ function findtheproductinamazon(AmazonLink,requirements){
                                 name:(listname).substring(0,n),
                                 link:"https://www.amazon.in/"+($(val).find('.a-text-normal').attr('href')),
                                 image:$(val).find('.s-image').attr('src'),
-                                detials:{}
+                                detials:{
+                                    "site":"amazon"
+                                }
                             });
                             // console.log($('.s-image').attr('src'));
                             // console.log(amz+findmainpage.print());
@@ -149,6 +151,23 @@ function findtheproductinamazon(AmazonLink,requirements){
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
 async function storeinjson() {
+    if(amazonproducts.length==0){
+        amazonproducts.push({
+            "detials": {
+              "name": "SEARCHED PRODUCTS NOT AVAILABLE",
+          }
+       })
+    }    
+    if(flipkartproducts.length==0){
+        console.log("called..");
+        flipkartproducts.push(
+            {
+                "detials": {
+                     "productName":"SEARCHED PRODUCTS NOT AVAILABLE",
+                }
+                }
+        )
+       }
     var json={
         amazon:amazonproducts,
         flipkart:flipkartproducts
@@ -164,6 +183,11 @@ async function storeinjson() {
 
     module.exports = {
         make_API_call : function(productname){
+             flipkartproducts=[];
+             amazonproducts=[];
+             z=0;
+             amz=0;
+             flip=0;
             let Name =productname.toLowerCase().trim();
     
             let fliplink=Name.replaceAll(" ","%20%20");

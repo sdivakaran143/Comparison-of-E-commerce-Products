@@ -3,6 +3,7 @@ const app = express()
 const callapi= require('./ProductList')
 findmainpage=require("./productpage");
 const cors=require('cors');
+const fs = require('fs');
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
@@ -18,9 +19,29 @@ app.get("/getAPIResponse",async (req, res, next) => {
     }
 );
 app.post("/postproductname",async (req,res)=>{
-    let{name}=req.body
+    let{name}=req.body;
+    console.log("hai....");
+    let nonObj={
+        "amazon": [
+             {
+                  "detials": {
+                    "name": "Loading......",
+                }
+             }
+            ],
+            "flipkart": [
+                {
+                "detials": {
+                     "productName": "Loading......",
+                }
+                }
+               ]
+        }
+   
+    fs.writeFileSync("F://webScrapingProject//client//myapp//src//database.json",JSON.stringify(nonObj));
     console.log(name);
     callapi.make_API_call(name)
+    res.redirect('/home')
 })
 app.get("/home",cors(),async(req,res)=>{
         res.send("yeaha.....")

@@ -20,7 +20,6 @@ function flipkartSpecificationFliter(arr1,arr2){
     }
 }
 function amazonSpecificationFilter(arr1,arr2){
-    console.log("comparing..");
     for (let i = 0; i < arr1.length; i++) {
         specobj[arr1[i]]=arr2[i];
     }
@@ -138,15 +137,16 @@ idcount=1;
 function updateAmazonJson(id){
     const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
     databases = JSON.parse(data)
-    // console.log(val+"  "+id);
+    // console.log(id);
+    // console.log(val);
     // val = Object.assign(databases.amazon[id].detials, val)
     databases.amazon[id].detials=val;
     fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
     // console.log(idcount);
-    if((databases.amazon).length==idcount){
-        process.exit()
-    }
-    idcount++;
+                // if((databases.amazon).length==idcount){
+                //     process.exit()
+                // }
+                // idcount++;
     // console.log(databases);
 }
 
@@ -154,6 +154,8 @@ function updateflipkartJson(id){
     const data = fs.readFileSync('F://webScrapingProject//client//myapp//src//database.json', 'utf8')
     databases = JSON.parse(data)
     // val = Object.assign(databases.flipkart[id].detials, val)
+    // console.log(id);
+    // console.log(flipval);
     databases.flipkart[id].detials=flipval;
     fs.writeFileSync('F://webScrapingProject//client//myapp//src//database.json', JSON.stringify(databases,null,5));
 
@@ -219,7 +221,7 @@ module.exports={
     //     return status
     // }
 };
-// let status=false;
+let status=false;
 // const amlin="https://www.amazon.in/Redmi-inches-Smart-L43M6-RA-Android/dp/B09G73T643/ref=sr_1_2_sspa?keywords=mi+tv&qid=1668266401&qu=eyJxc2MiOiI0LjcyIiwicXNhIjoiNC4zOCIsInFzcCI6IjMuNjMifQ%3D%3D&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1";
 // const fliplin="https://www.flipkart.com/mi-4a-horizon-100-cm-40-inch-full-hd-led-smart-android-tv-20w-powerful-audio-bezel-less-frame/p/itm3c92e3fcfdeca?pid=TVSG36HHUKPKGJFC&lid=LSTTVSG36HHUKPKGJFCES4MSK&marketplace=FLIPKART&q=Mi%20tv%204a&store=ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=1f8487a0-04b7-4109-a356-7cc2d311d196.TVSG36HHUKPKGJFC.SEARCH&ppt=sp&ppn=sp&ssid=0az5zwxvk00000001663344698985&qH=04e81d700cbf8360";
 // Flipkartdetials(fliplin);
@@ -228,6 +230,13 @@ module.exports={
         //     Whatisthestatus()
         // })
         // function Whatisthestatus(){
-        //     // console.log("exit....");
+        //     console.log("exit....");
+        //     content="restart";
+        //     fs.writeFile('F://webScrapingProject//server//restart.txt', content, err => {
+        //         if (err) {
+        //           console.error(err);
+        //         }
+        //         // file written successfully
+        //       });
         //     status=true
         // }
