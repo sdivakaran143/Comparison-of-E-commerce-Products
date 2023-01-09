@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <!-- <link rel="stylesheet" href="../new.css"> -->
+    <style>*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: dotted red 0.1px;
+  }
+  nav{
+      align-items: center;
+      display: flex;    
+      justify-content: space-between;
+      background-color: antiquewhite;
+      height: 3.5rem;
+  }
+  
+  .nav-li{
+      width: 40%;
+      display: flex;    
+      justify-content: space-around;  
+      text-decoration: none;
+  }
+  
+  .searchDiv{
+      padding-right: 22%;
+  }
+  
+  .body-content{
+      height: 88.7vh;
+      background:rgb(255, 176, 176);
+      display: grid;
+  }
+  
+  .amazon-content ,.flipkart-content{
+      height: 83vh;
+      width: 49%;
+      background-color: rgb(240, 204, 204);
+      /* overflow-y: scroll; */
+  }
+  .card_cont{
+      height: 78.5vh;
+      display: grid;
+      place-items: center;
+      overflow-y: scroll;
+  }
+  ::-webkit-scrollbar{ 
+      width: 0.5em;
+  }
+  ::-webkit-scrollbar-track{ 
+      background:rgb(240, 204, 204);
+      width: 260px;
+      border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: rgb(246, 250, 243);
+      border-radius: 30px;
+   }
+  
+  .amazon-title ,.flipkart-title{
+      text-align: center;
+      position: -webkit-sticky;
+      position: sticky;
+      top:0;
+      background-color: bisque;
+  }
+  
+  .product-img{
+      height: 7em;
+      width: 8em;
+      border-radius: 10px;
+  }
+  
+  .card{
+      display: flex;
+      width: 95%;
+      margin-bottom: 10px;
+  }
+  
+  .card-details{
+      padding-left: 2%;
+      display: grid;
+      width: 70%;
+      align-items: center;   
+      overflow: none;
+  }
+  
+  .btn{
+      align-items: center;
+      border-radius: 30%;
+      margin: 30px;
+      width: 4vw;
+      height: 7vh;
+  }
+  
+  .content-element{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .btn-compare{
+      display: grid;
+      place-items: center;
+  }
+  .compare-btn{
+      width: 8em;
+      height: 4vh;
+      border-radius: 20px;
+      background: rgb(137, 101, 235);
+      color: aliceblue;
+  }
+  
+  
+  </style>
+  </head>
+    <body>
+      <div class="nav">
+        <nav>
+          <h2>Title</h2>
+  
+          <div class="nav-li">
+            <a>hello</a>
+            <a>hxd</a>
+            <a>cxxcv</a>
+            <a>gxcgnf</a>
+          </div>
+        </nav>
+  
+        <div class="searchDiv">
+          <input type="text" placeholder="Product Name" />
+          <button>Search</button>
+          <!-- <form action="" class="search-bar">
+              <input type="search" name="search" pattern=".*\S.*" required>
+              <button class="search-btn" type="submit">
+                  <span>Search</span>
+              </button>
+          </form> -->
+        </div>
+      </div>
+      <div class="body-content">
+        <div class="content-element">
+          <div class="amazon-content">
+            <div class="amazon-title">
+              <h2>Amazon</h2>
+            </div>
+  
+            <div class="card_cont">
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+              <div class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="flipkart-content">
+            <div class="flipkart-title">
+              <h2>Flipkart</h2>
+            </div>
+  
+            <div class="card_cont">
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+              <figure class="card">
+                <div>
+                  <img class="product-img" src="./workplace.jpg" alt="lap" />
+                </div>
+                <div class="card-details">
+                  <h3 class="product-name">Title :</h3>
+                  <h3 class="product-price">Price :</h3>
+                  <h3 class="product-rating">Rating :</h3>
+                </div>
+  
+                <button class="btn">+</button>
+              </figure>
+            </div>
+          </div>
+        </div>
+  
+        <div class="btn-compare">
+          <button class="compare-btn" type="submit">COMPARE</button>
+        </div>
+      </div>
+    </body>
+  </html>

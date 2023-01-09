@@ -20,6 +20,7 @@ function flipkartSpecificationFliter(arr1,arr2){
     }
 }
 function amazonSpecificationFilter(arr1,arr2){
+    console.log("comparing..");
     for (let i = 0; i < arr1.length; i++) {
         specobj[arr1[i]]=arr2[i];
     }
@@ -103,6 +104,7 @@ function initamazon(producturl) {
             })
             amazonSpecificationFilter(arrl,arrr);
             let offerpercentage=($("#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center > span.a-size-large.a-color-price.savingPriceOverride.aok-align-center.reinventPriceSavingsPercentageMargin.savingsPercentage").text());
+            offerpercentage=offerpercentage.substring(1,offerpercentage.length)
             if(offerpercentage==""){
                 offerpercentage="0%"
             }
@@ -116,7 +118,7 @@ function initamazon(producturl) {
             // }
              val={
                 name:product,
-                price:price,
+                price:"₹"+price,
                 specification :spec,
                 rating:star.substring(0,17),
                 rated:rated,
@@ -166,6 +168,9 @@ function initflipkart(producturl){
                 var string=$(".B_NuCI").text().trim();
                 var indexbracket=string.indexOf('(')-1;
                 var productName=(string.substring(0,indexbracket));
+                if(!productName){
+                    productName=$(".B_NuCI").text().trim()
+                }
                 var spec=(string.substring(string.indexOf("(")));
                 var price =($("._16Jk6d").text());
                 var ratting=($('._3LWZlK').text().substring(0,3)+" out of 5 stars");

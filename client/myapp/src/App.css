@@ -1,27 +1,11 @@
-.main{
-   background-color:rebeccapurple
-  }
-  .amazoncard ,.flipkartcard{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    width: 650px;
-  }
-  .cards{
-    height: 30%;
-  }
-  .productimage{
-    height: 100px;
-    padding-top: 30px;
-  }
-  .cardcontent{
-    margin: 0px 0px 0px 15px ;
-  }
+:root {
+    --white: white;
+    --black:black;
+    --grey:grey;
+    --white-light:rgba(255, 249, 249, 0.918);
 
-
-  *{
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +15,7 @@ nav{
     align-items: center;
     display: flex;    
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: var(--grey);
     height: 3.5rem;
 }
 
@@ -43,19 +27,26 @@ nav{
 }
 .searchDiv{
     display:grid;
-    place-items: end;
+    place-items: center;
+    background-color: var(--grey);
+}
+.searchDiv input {
+    width: 50%;
 }
 
 .body-content{
     height: 88.7vh;
-    background:rgb(255, 176, 176);
+    /* background:rgb(255, 176, 176); */
+    background-color: var(--white);
     display: grid;
 }
 
 .amazon-content ,.flipkart-content{
     height: 83vh;
     width: 49%;
-    background-color: rgb(240, 204, 204);
+    background-color: rgb(194, 188, 188);
+    /* background-color: var(--white); */
+    /* border: 1px solid black;; */
     /* overflow-y: scroll; */
 }
 .card_cont{
@@ -68,12 +59,14 @@ nav{
     width: 0.5em;
 }
 ::-webkit-scrollbar-track{ 
-    background:rgb(240, 204, 204);
+    /* background:var(--grey); */
+    /* background-color: blue; */
     width: 260px;
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(246, 250, 243);
+    /* background: var(--black); */
+    background: rgba(0, 0, 0, 0.219);
     border-radius: 30px;
  }
 
@@ -82,7 +75,8 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top:0;
-    background-color: bisque;
+    color: var(--white);
+    background-color:var(--black);
 }
 
 .product-img{
@@ -132,3 +126,32 @@ nav{
 
 
 
+/* ------------------------------- */
+.amazoncard ,.flipkartcard{
+    background-color:var(--white-light);
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: .4em;
+    margin: 3%;
+    display: flex;
+    width: 40em;
+  }
+  /* .cards{
+    height: 30%;
+    background-color: blanchedalmond;
+  } */
+  .productimage{
+    height: 120px;
+    /* margin: 5px 5px 5px 20px; */
+    border-radius: 20px;
+  }
+  .cardcontent{
+    margin: 10px 20px 10px 50px ;
+    
+    width: 65%;
+  }
+  .cardcontent a{
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 600;
+  }
