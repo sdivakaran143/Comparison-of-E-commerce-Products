@@ -2,7 +2,8 @@
     --white: white;
     --black:black;
     --grey:grey;
-    --white-light:rgba(255, 249, 249, 0.918);
+    --light-grey:rgba(128, 128, 128, 0.549);
+    --dark-grey:rgb(85, 83, 83);
 
 }
 *{
@@ -15,7 +16,7 @@ nav{
     align-items: center;
     display: flex;    
     justify-content: space-between;
-    background-color: var(--grey);
+    background-color: var(--white);
     height: 3.5rem;
 }
 
@@ -25,15 +26,44 @@ nav{
     justify-content: space-around;  
     text-decoration: none;
 }
+.nav-li a{
+    padding: 5px 15px 7px 15px;
+}
+.nav-li a:hover{
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 20px;
+
+}
 .searchDiv{
     display:grid;
     place-items: center;
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
+}
+.searchDiv form{
+    border: 1px solid black;
+    width: 30%;
+    margin: 15px 0px 10px 0px;
 }
 .searchDiv input {
-    width: 50%;
+    width: 80%;
+    padding: 5px 10px 5px 10px ;
+    border: none;
+    outline: 0;
 }
-
+.searchDiv button{
+    padding: 6px 10px 5px 10px ;
+    width: 20%;
+    border: none;
+    background-color: var(--light-grey);
+}
+.searchDiv button:focus{
+    background-color: var(--grey);
+}
+.searchDiv button:hover{
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
 .body-content{
     height: 88.7vh;
     /* background:rgb(255, 176, 176); */
@@ -44,8 +74,8 @@ nav{
 .amazon-content ,.flipkart-content{
     height: 83vh;
     width: 49%;
-    background-color: rgb(194, 188, 188);
-    /* background-color: var(--white); */
+    /* background-color: rgb(216, 216, 216); */
+    background-color: var(--grey);
     /* border: 1px solid black;; */
     /* overflow-y: scroll; */
 }
@@ -101,10 +131,20 @@ nav{
 
 .btnFli,.btnAmz{
     align-items: center;
-    border-radius: 30%;
-    margin: 30px;
+    border-radius: 50% 20%;
+    /* margin: 30px; */
+    position: relative;
+    top: 50px;
+    right:10px;
     width: 4vw;
-    height: 7vh;
+    height: 5vh;
+    border: none;
+    background-color: var(--grey);
+    color: var(--white);
+    opacity: 40%;
+}
+.btnFli:hover,.btnAmz:hover{
+    opacity: 100%;
 }
 
 .content-element{

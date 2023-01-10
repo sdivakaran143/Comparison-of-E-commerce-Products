@@ -152,7 +152,7 @@ function findtheproductinamazon(AmazonLink,requirements){
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
 let mycount=0;
-async function storeinjson() {
+function storeinjson() {
     mycount++;
     if(mycount==2&&amazonproducts.length==0){
         amazonproducts=[{

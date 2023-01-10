@@ -66,6 +66,7 @@ function App() {
             <button type="submit">submit</button>
           </form>
         </div>
+
       </div>
       <div className="body-content">
         <div className="content-element">
@@ -73,7 +74,6 @@ function App() {
             <div className="amazon-title">
               <h2>Amazon</h2>
             </div>
-
             <div className="card_cont">
               <Amazoncard />
             </div>
@@ -82,18 +82,17 @@ function App() {
             <div className="flipkart-title">
               <h2>Flipkart</h2>
             </div>
-
             <div className="card_cont">
               <Flipkartcards />
             </div>
           </div>
         </div>
 
-        <div className="btn-compare">
+        {/* <div className="btn-compare">
           <button className="compare-btn" type="submit">
             COMPARE
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
