@@ -1,3 +1,4 @@
+const { count } = require("console");
 const req =require("request"),cherio=require('cheerio'),axios=require("axios"),fs=require('fs'),findmainpage=require("./productpage");
 // let FlipkartObj={};
 // let AmazonObj={};
@@ -150,23 +151,23 @@ function findtheproductinamazon(AmazonLink,requirements){
     /////*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(2) > div > div > div > a
 //#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2) > div:nth-child(3) > div > div > div > a
+let mycount=0;
 async function storeinjson() {
-    if(amazonproducts.length==0){
-        amazonproducts.push({
+    mycount++;
+    if(mycount==2&&amazonproducts.length==0){
+        amazonproducts=[{
             "detials": {
               "name": "SEARCHED PRODUCTS NOT AVAILABLE",
           }
-       })
+       }]
     }    
-    if(flipkartproducts.length==0){
+    if(mycount==2&&flipkartproducts.length==0){
         console.log("called..");
-        flipkartproducts.push(
-            {
-                "detials": {
-                     "productName":"SEARCHED PRODUCTS NOT AVAILABLE",
-                }
-                }
-        )
+        flipkartproducts=[ {
+            "detials": {
+                 "productName":"SEARCHED PRODUCTS NOT AVAILABLE",
+            }
+            }]
        }
     var json={
         amazon:amazonproducts,
