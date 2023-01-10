@@ -128,7 +128,7 @@ nav{
 
 /* ------------------------------- */
 .amazoncard ,.flipkartcard{
-    background-color:var(--white-light);
+    background-color:var(--white);
     border: 2px solid grey;
     border-radius: 20px;
     padding: .4em;
@@ -143,7 +143,7 @@ nav{
   .productimage{
     height: 120px;
     /* margin: 5px 5px 5px 20px; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
   .cardcontent{
     margin: 10px 20px 10px 50px ;
