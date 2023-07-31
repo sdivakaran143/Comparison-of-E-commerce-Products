@@ -2,7 +2,6 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import { Amazoncard } from "./cards";
 import { Flipkartcards } from "./cards";
-// import css from "./App.module.css"
 import axios from "axios";
 
 function App() {
@@ -27,36 +26,13 @@ function App() {
     }
   }
 
-  // window.onload = function(){
-    
-    
-    // window.addEventListener('DOMContentLoaded', function() {
-
-    // let AmzClick = ()=>{
-      
-    // }
-      
-    // });
-    
-  // }
-
-
   return (
+    
     <div className="main">
+      
       <div className="nav">
-        <nav>
-          <h2>Title</h2>
-          {home}
-
-          <div className="nav-li">
-            <a>hello</a>
-            <a>hxd</a>
-            <a>cxxcv</a>
-            <a>gxcgnf</a>
-          </div>
-        </nav>
-
         <div className="searchDiv">
+        <h2>E-COM PRODUCT COMPARE</h2>
           <form onSubmit={postproductname}>
             <input
               type="text"
@@ -66,7 +42,6 @@ function App() {
             <button type="submit">submit</button>
           </form>
         </div>
-
       </div>
       <div className="body-content">
         <div className="content-element">
@@ -74,6 +49,7 @@ function App() {
             <div className="amazon-title">
               <h2>Amazon</h2>
             </div>
+
             <div className="card_cont">
               <Amazoncard />
             </div>
@@ -82,17 +58,12 @@ function App() {
             <div className="flipkart-title">
               <h2>Flipkart</h2>
             </div>
+
             <div className="card_cont">
               <Flipkartcards />
             </div>
           </div>
         </div>
-
-        {/* <div className="btn-compare">
-          <button className="compare-btn" type="submit">
-            COMPARE
-          </button>
-        </div> */}
       </div>
     </div>
   );

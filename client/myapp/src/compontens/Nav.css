@@ -1,0 +1,29 @@
+nav{
+    align-items: center;
+    display: flex;    
+    justify-content: space-around;
+    background-color: var(--white);
+    height: 3.5rem;
+}
+
+.nav-li{
+    width: 40%;
+    display: flex;    
+    justify-content: space-around;  
+    list-style: none;
+    padding: 5px 15px 7px 15px;
+    /* background: rgb(158, 144, 144); */
+}
+li{
+    text-align: center;
+    width: 25px;
+    height: 3vh;
+}
+
+.nav-li :hover{
+    background-color: var(--black);
+    color: var(--white);
+    width: 50px;
+    border-radius: 7px;
+
+}

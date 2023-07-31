@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import amzdata, { amazon } from "./database.json";
 import flipdata, { flipkart } from "./database.json";
-import { CgDetailsMore } from "react-icons/cg";
+import { CgDetailsMore } from "react-icons/cg";  //npm install react-icons
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { TbLink } from "react-icons/tb";
 
@@ -36,49 +36,41 @@ const Amazoncard = () => {
             <MdOutlineKeyboardBackspace fontSize="1.7em" />
           </button>
           <button className="visitLink">
-            <a href={objAmz.link} target="_blank" rel="noreferrer">
-              <TbLink fontSize="2em" color="black" />
+            <a href={objAmz.link} target="_blank">
+              <TbLink fontSize="1.7em" color="black" />
             </a>
           </button>
         </div>
         <div className="TotalContant">
-          <div className="proHeadImage">
-            <img
-              src={objAmz.image}
-              alt={objAmz.image}
-              className="productimage"
-            />
-         
-          <div className="proBodyDetailsf">
-            <h4 className="product-name">
-              Title : <span>{objAmz.name}</span>
-            </h4>
-            <h4 className="product-deliCharg">
-              Specifications:<span> {objAmzDetails.detailSpecification}</span>
-            </h4>
-            <h4 className="product-price">
-              price : <span>{objAmzDetails.detailPrice}</span>
-            </h4>
-            <h4 className="product-rating">
-              Rating :<span> {objAmzDetails.detailRating}</span>
-            </h4>
-            <h4 className="product-offer">
-              Offer : <span>{objAmzDetails.detailOffer}</span>
-            </h4>
-
-            <h4 className="product-rated">
-              No of People Rated : <span>{objAmzDetails.detailCustomerRated}</span>
-            </h4>
-            <h4 className="product-emi">
-              EMI : <span>{objAmzDetails.detailEmi}</span>
-            </h4>
-            <h4 className="product-replacement">
-              Replacement : <span>{objAmzDetails.detialReplacement}</span>
-            </h4>
-            {/* <h4 className="product-offer">
-              Offer : <span>{objAmzDetails.detailOffer}</span>
-            </h4> */}
+          <div className="prodHead">
+            <div className="proHeadImage">
+              <img
+                src={objAmz.image}
+                alt={objAmz.image}
+                className="productimage"
+              />
+            </div>
+            <div className="proHeadDetail">
+              <h4 className="product-name">Title : {objAmz.name}</h4>
+              <h4 className="product-deliCharg">
+                Specifications: {objAmzDetails.detailSpecification}
+              </h4>
+              <h4 className="product-price">price : {objAmzDetails.detailPrice}</h4>
+              <h4 className="product-rating">
+                Rating : {objAmzDetails.detailRating}
+              </h4>
+              <h4 className="product-offer">Offer : {objAmzDetails.detailOffer}</h4>
+            </div>
           </div>
+          <div className="proBodyDetails">
+            <h3 className="product-rated">
+              No of People Rated : {objAmzDetails.detailCustomerRated}
+            </h3>
+            <h3 className="product-emi">EMI : {objAmzDetails.detailEmi}</h3>
+            <h3 className="product-replacement">
+              Replacement : {objAmzDetails.detialReplacement}
+            </h3>
+            <h3 className="product-offer">Offer : {objAmzDetails.detailOffer}</h3>
           </div>
         </div>
       </div>
@@ -90,9 +82,7 @@ const Amazoncard = () => {
               <div key={x.id} className="amazoncard">
                 <img src={x.image} alt={x.image} className="productimage" />
                 <div className="cardcontent">
-                <a href={x.link}>{x.detials.detailName}</a>
-                  <br />
-                  <br />
+                  <a href={x.link}>{x.detials.detailName}</a>
                   <p>PRICE: {x.detials.detailPrice}</p>
                   <p>RATING: {x.detials.detailRating}</p>
                   <p>OFFER: {x.detials.detailOffer}</p>
@@ -136,45 +126,43 @@ const Flipkartcards = () => {
             <MdOutlineKeyboardBackspace fontSize="1.7em" />
           </button>
           <button className="visitLink">
-            <a href={objFlip.link} target="_blank" rel="noreferrer">
+            <a href={objFlip.link} target="_blank">
               <TbLink fontSize="1.7em" color="black" />
             </a>
           </button>
         </div>
         <div className="TotalContant">
-          <div className="proHeadImagef">
-            <img
-              src={objFlip.image}
-              alt={objFlip.image}
-              className="productimage"
-            />
-          </div>
-          <div className="proBodyDetailsf">
-            <h4 className="product-name">
-              Title : <span>{objFlip.name}</span>
-            </h4>
-            <h4 className="product-deliCharg">
-                Specifications: <span>{objDetailsFlip.detailSpecification}</span>
+          <div className="prodHead">
+            <div className="proHeadImage">
+              <img
+                src={objFlip.image}
+                alt={objFlip.image}
+                className="productimage"
+              />
+            </div>
+            <div className="proHeadDetail">
+              <h4 className="product-name">Title : {objFlip.name}</h4>
+              <h4 className="product-deliCharg">
+                Specifications: {objDetailsFlip.detailSpecification}
               </h4>
-              <h4 className="product-price">price : <span>{objDetailsFlip.detailPrice}</span></h4>
+              <h4 className="product-price">price : {objDetailsFlip.detailPrice}</h4>
               <h4 className="product-rating">
-                Rating : <span>{objDetailsFlip.detailRating}</span>
+                Rating : {objDetailsFlip.detailRating}
               </h4>
-              <h4 className="product-offer">Offer : <span>{objDetailsFlip.detailOffer}</span></h4>
-          <h3 className="product-rated">
-            No of People Rated : <span>{objDetailsFlip.detailCustomerRated}</span>
-          </h3>
-          <h3 className="product-emi">
-            EMI :<span> {objDetailsFlip.detailEmi}</span>
-          </h3>
-          <h3 className="product-replacement">
-            Replacement : <span>{objDetailsFlip.detialReplacement}</span>
-          </h3>
-          {/* <h3 className="product-offer">
-            Offer : <span>{objDetailsFlip.detailOffer}</span>
-          </h3> */}
+              <h4 className="product-offer">Offer : {objDetailsFlip.detailOffer}</h4>
+            </div>
+          </div>
+          <div className="proBodyDetails">
+            <h3 className="product-rated">
+              No of People Rated : {objDetailsFlip.detailCustomerRated}
+            </h3>
+            <h3 className="product-emi">EMI : {objDetailsFlip.detailEmi}</h3>
+            <h3 className="product-replacement">
+              Replacement : {objDetailsFlip.detialReplacement}
+            </h3>
+            <h3 className="product-offer">Offer : {objDetailsFlip.detailOffer}</h3>
+          </div>
         </div>
-      </div>
       </div>
       <div className="flipkartbox">
         <div className={isActive ? "" : "hidden"}>
@@ -182,11 +170,11 @@ const Flipkartcards = () => {
             return (
               <div>
                 <div key={y.id} className={isActive ? "" : "hidden"}>
-                  <div className="flipkartcard adjus">
+                  <div className="flipkartcard">
                     <img src={y.image} alt={y.image} className="productimage" />
                     <br />
                     <div className="cardcontent">
-                    <a href={y.link}>{y.detials.detailName}</a>
+                      <a href={y.link}>{y.detials.detailName}</a>
                       <br />
                       <br />
                       <p>PRICE: {y.detials.detailPrice}</p>
