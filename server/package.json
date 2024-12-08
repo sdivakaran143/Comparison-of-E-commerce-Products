@@ -79,7 +79,7 @@
     "performance-now": "^2.1.0",
     "proxy-addr": "^2.0.7",
     "proxy-from-env": "^1.1.0",
-    "qs": "^6.5.3",
+    "qs": "^6.13.0",
     "range-parser": "^1.2.1",
     "raw-body": "^2.5.1",
     "request": "^2.88.2",
