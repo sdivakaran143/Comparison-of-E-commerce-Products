@@ -75,7 +75,7 @@
     "parse5": "^7.1.1",
     "parse5-htmlparser2-tree-adapter": "^7.0.0",
     "parseurl": "^1.3.3",
-    "path-to-regexp": "^0.1.7",
+    "path-to-regexp": "^0.2.5",
     "performance-now": "^2.1.0",
     "proxy-addr": "^2.0.7",
     "proxy-from-env": "^1.1.0",
