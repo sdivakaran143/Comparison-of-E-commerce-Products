@@ -1,26 +1,37 @@
 name: Export Dependabot Alerts
 
 on:
-  workflow_dispatch: # Allows you to manually trigger this anytime
+  workflow_dispatch: # Allows you to run it manually from the UI
 
 permissions:
-  security-events: read # Required to fetch Dependabot data
+  security-events: read # Required to read Dependabot alert data
   contents: read
 
 jobs:
   export-alerts:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Export Dependabot Alerts to CSV
-        uses: jason-curtis/dependabot-alert-export@v1.0.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch and Convert Dependabot Alerts to CSV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching Dependabot alerts..."
+          
+          # 1. Fetch JSON data using the native GitHub CLI
+          # 2. Convert JSON keys to CSV headers and rows using JQ
+          gh api repos/${{ github.repository }}/dependabot/alerts \
+            --paginate \
+            --jq 'if length == 0 then empty else .[] | [.number, .state, .dependency.package.name, .security_advisory.severity, .security_advisory.summary] | @csv end' > alerts_raw.csv
 
-      - name: Upload CSV Artifact
+          # 3. Create a final CSV file with a header row
+          echo '"Alert Number","State","Package Name","Severity","Summary"' > dependabot_alerts.csv
+          cat alerts_raw.csv >> dependabot_alerts.csv
+
+      - name: Upload CSV Report
         uses: actions/upload-artifact@v4
         with:
-          name: dependabot-report
+          name: dependabot-csv-report
           path: dependabot_alerts.csv
