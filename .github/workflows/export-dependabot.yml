@@ -1,0 +1,26 @@
+name: Export Dependabot Alerts
+
+on:
+  workflow_dispatch: # Allows you to manually trigger this anytime
+
+permissions:
+  security-events: read # Required to fetch Dependabot data
+  contents: read
+
+jobs:
+  export-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Export Dependabot Alerts to CSV
+        uses: jason-curtis/dependabot-alert-export@v1.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload CSV Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependabot-report
+          path: dependabot_alerts.csv
