@@ -1,10 +1,9 @@
 name: Export Dependabot Alerts
 
 on:
-  workflow_dispatch: # Allows you to run it manually from the UI
+  workflow_dispatch:
 
 permissions:
-  security-events: read # Required to read Dependabot alert data
   contents: read
 
 jobs:
@@ -16,17 +15,14 @@ jobs:
 
       - name: Fetch and Convert Dependabot Alerts to CSV
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # This pulls the hidden key safely out of your private settings vault at runtime
+          GH_TOKEN: ${{ secrets.EXPORT_SECRET_KEY }} 
         run: |
-          echo "Fetching Dependabot alerts..."
-          
-          # 1. Fetch JSON data using the native GitHub CLI
-          # 2. Convert JSON keys to CSV headers and rows using JQ
+          echo "Fetching Dependabot alerts securely..."
           gh api repos/${{ github.repository }}/dependabot/alerts \
             --paginate \
             --jq 'if length == 0 then empty else .[] | [.number, .state, .dependency.package.name, .security_advisory.severity, .security_advisory.summary] | @csv end' > alerts_raw.csv
 
-          # 3. Create a final CSV file with a header row
           echo '"Alert Number","State","Package Name","Severity","Summary"' > dependabot_alerts.csv
           cat alerts_raw.csv >> dependabot_alerts.csv
 
